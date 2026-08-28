@@ -35,7 +35,7 @@ import com.amplitude.android.Amplitude
 import com.amplitude.android.Configuration
 import com.amplitude.android.DefaultTrackingOptions
 import com.project.zephyr.client.R
-import com.project.zephyr.client.ui.Theme.ZephyrClientTheme
+import com.project.zephyr.client.ui.theme.ZephyrClientTheme
 import com.project.zephyr.client.util.TrackUtil
 import com.project.zephyr.client.util.UpdateCheck
 

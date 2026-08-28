@@ -43,7 +43,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.project.zephyr.client.model.VersionConfig
-import com.project.zephyr.client.ui.Theme.ZephyrClientTheme
+import com.project.zephyr.client.ui.theme.ZephyrClientTheme
 import com.project.zephyr.client.util.API
 import com.project.zephyr.client.util.HashCat
 import com.project.zephyr.client.util.UpdateCheck

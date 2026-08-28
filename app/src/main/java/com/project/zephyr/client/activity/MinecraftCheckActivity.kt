@@ -58,7 +58,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 
-import com.project.zephyr.client.ui.Theme.ZephyrClientTheme
+import com.project.zephyr.client.ui.theme.ZephyrClientTheme
 import androidx.core.net.toUri
 import com.project.zephyr.client.util.SessionManager
 

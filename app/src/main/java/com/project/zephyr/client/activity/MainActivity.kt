@@ -67,7 +67,7 @@ import com.project.zephyr.client.constructors.ArrayListManager
 import com.project.zephyr.client.constructors.GameManager
 import com.project.zephyr.client.game.module.api.config.ConfigManagerElement
 import com.project.zephyr.client.navigation.Navigation
-import com.project.zephyr.client.ui.Theme.ZephyrClientTheme
+import com.project.zephyr.client.ui.theme.ZephyrClientTheme
 import com.project.zephyr.client.util.HashCat
 import io.netty.util.internal.logging.InternalLoggerFactory
 import io.netty.util.internal.logging.JdkLoggerFactory

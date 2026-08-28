@@ -9,7 +9,7 @@ import androidx.compose.foundation.LocalOverscrollConfiguration
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.CompositionLocalProvider
 import com.project.zephyr.client.remlink.RemoteLink
-import com.project.zephyr.client.ui.Theme.ZephyrClientTheme
+import com.project.zephyr.client.ui.theme.ZephyrClientTheme
 import android.content.Intent
 import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts

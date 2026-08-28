@@ -22,7 +22,7 @@ import com.project.zephyr.client.application.AppContext
 import com.project.zephyr.client.constructors.GameManager
 import com.project.zephyr.client.overlay.mods.DummyOverlay
 import com.project.zephyr.client.service.Services
-import com.project.zephyr.client.ui.Theme.ZephyrClientTheme
+import com.project.zephyr.client.ui.theme.ZephyrClientTheme
 
 import kotlinx.coroutines.launch
 

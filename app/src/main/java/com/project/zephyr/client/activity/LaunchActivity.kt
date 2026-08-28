@@ -17,7 +17,7 @@ import com.amplitude.android.Configuration
 import com.amplitude.android.DefaultTrackingOptions
 import com.google.firebase.crashlytics.FirebaseCrashlytics
 import com.project.zephyr.client.router.launch.AnimatedLauncherScreen
-import com.project.zephyr.client.ui.Theme.ZephyrClientTheme
+import com.project.zephyr.client.ui.theme.ZephyrClientTheme
 import com.project.zephyr.client.util.HashCat
 import com.project.zephyr.client.util.SessionManager
 import com.project.zephyr.client.util.TrackUtil
