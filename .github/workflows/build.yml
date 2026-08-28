@@ -1,0 +1,112 @@
+name: Build ZephyrMC Android
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+    
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+        
+    - name: Remove Protocol modules from settings.gradle.kts
+      run: |
+        sed -i '/include(":Protocol:/d' settings.gradle.kts
+        
+    - name: Remove Protocol dependencies from Lunaris/build.gradle.kts
+      run: |
+        sed -i '/project(":Protocol:/d' Lunaris/build.gradle.kts
+
+    - name: Remove built-in Protocol folder
+      run: |
+        rm -rf Protocol/
+        
+    - name: Add AllayMC Protocol repository to settings.gradle.kts
+      run: |
+        sed -i 's|mavenCentral()|mavenCentral()\n        maven("https://repo.opencollab.dev/maven-releases")|' settings.gradle.kts
+
+    - name: Update Lunaris dependencies to use AllayMC
+      run: |
+        sed -i '/api(project(":minecraft-msftauth"))/a\    api("org.allaymc.protocol:bedrock-codec:1.26.40-R1")\n    api("org.allaymc.protocol:bedrock-connection:1.26.40-R1")' Lunaris/build.gradle.kts
+
+    - name: Replace CloudburstMC protocol imports with AllayMC in Lunaris
+      run: |
+        find Lunaris/src -name "*.kt" -exec sed -i 's|org\.cloudburstmc\.protocol|org.allaymc.protocol|g' {} \;
+
+    - name: Update ZephyrRelay codec references for AllayMC
+      run: |
+        sed -i 's|Bedrock_v818\.CODEC|Bedrock_v1001.CODEC|g' Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt
+        sed -i 's|Bedrock_v786\.CODEC|Bedrock_v1001.CODEC|g' Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt
+        sed -i 's|org\.cloudburstmc\.protocol\.bedrock\.codec\.v818\.Bedrock_v818|org.allaymc.protocol.bedrock.codec.v1001.Bedrock_v1001|g' Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt
+        sed -i 's|org\.cloudburstmc\.protocol\.bedrock\.codec\.v786\.Bedrock_v786|org.allaymc.protocol.bedrock.codec.v1001.Bedrock_v1001|g' Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt
+
+    - name: Update ProtocolHelper.cpp for AllayMC codec paths
+      run: |
+        sed -i 's|org/cloudburstmc/protocol/bedrock/codec/v898/Bedrock_v898|org/allaymc/protocol/bedrock/codec/v1001/Bedrock_v1001|g' Lunaris/src/main/cpp/ProtocolHelper.cpp
+        sed -i '/897, "org\/cloudburstmc\/protocol\/bedrock\/codec\/v898\/Bedrock_v898"/a\        {1001, "org/allaymc/protocol/bedrock/codec/v1001/Bedrock_v1001"}' Lunaris/src/main/cpp/ProtocolHelper.cpp
+        
+    - name: Fix Firebase plugins in app/build.gradle.kts
+      run: |
+        sed -i '/id("com.google.gms.google-services")/d' app/build.gradle.kts
+        sed -i '/id("com.google.firebase.crashlytics")/d' app/build.gradle.kts
+        sed -i '/com.google.firebase/d' app/build.gradle.kts
+        
+    - name: Create mock google-services.json
+      run: |
+        mkdir -p app
+        cat << 'EOF' > app/google-services.json
+        {
+          "project_info": {
+            "project_number": "123456789",
+            "project_id": "mock-project",
+            "storage_bucket": "mock.appspot.com"
+          },
+          "client": [
+            {
+              "client_info": {
+                "mobilesdk_app_id": "1:123456789:android:abc123",
+                "android_client_info": {
+                  "package_name": "com.project.zephyr.client"
+                }
+              },
+              "api_key": [{ "current_key": "mock-key" }]
+            }
+          ]
+        }
+        EOF
+        
+    - name: Cache Gradle
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.gradle/caches
+          ~/.gradle/wrapper
+        key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+        
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+      
+    - name: Build Debug APK
+      run: ./gradlew assembleDebug --stacktrace
+      
+    - name: Upload APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: ZephyrMC-Debug
+        path: app/build/outputs/apk/debug/*.apk
+        retention-days: 7

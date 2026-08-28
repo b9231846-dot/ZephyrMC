@@ -1,0 +1,21 @@
+-dontwarn **
+-renamesourcefileattribute null
+-keep class io.netty.** { *; }
+-keep class org.cloudburstmc.netty.** { *; }
+-keep @io.netty.channel.ChannelHandler$Sharable class *
+-keepclassmembers class * {
+    @com.google.gson.annotations.SerializedName <fields>;
+}
+-keep class coelho.msftauth.api.** { *; }
+-keep class com.project.zephyr.client.util.** { *; }
+-keep class com.project.zephyr.client.constructors.AccountManager { *; }
+-keep class com.project.zephyr.relay.** { *; }
+-keep class org.cloudburstmc.protocol.** { *; }
+-keep class com.mycompany.application.** { *; }
+-keep class com.project.zephyr.client.CPPBridge.**  { *; }
+-keep class com.project.zephyr.client.constructors.ModuleManager.** {*;}
+-keep class com.project.zephyr.client.constructors.GameDataManager.** {*;}
+-keep class net.raphimc.** {*;}
+-keep class io.jsonwebtoken.** {*;}
+-keep class net.raphimc.** {*;}
+-keep class io.jsonwebtoken.** {*;}
