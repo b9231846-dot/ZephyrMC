@@ -49,12 +49,10 @@ android {
 }
 
 dependencies {
-
     api(project(":Network:transport-raknet"))
     api(project(":minecraft-msftauth"))
-    api(project(":Protocol:bedrock-codec"))
-    api(project(":Protocol:bedrock-connection"))
-    api(project(":Protocol:common"))
+    api("org.allaymc.protocol:bedrock-codec:1.26.30-R2")
+    api("org.allaymc.protocol:bedrock-connection:1.26.30-R2")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
