@@ -30,81 +30,107 @@ Installing NDK (Side by side) 27.0.12077973 in /usr/local/lib/android/sdk/ndk/27
 > Configure project :TablerIcons
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/TablerIcons/build.gradle.kts:85:45: 'capitalize(): String' is deprecated. Use replaceFirstChar instead.
 
+> Configure project :Protocol:adventure
+No explicit dependency on the Checker Framework found, using default version 3.49.0
+
+> Configure project :Protocol:bedrock-codec
+No explicit dependency on the Checker Framework found, using default version 3.49.0
+
+> Configure project :Protocol:bedrock-connection
+No explicit dependency on the Checker Framework found, using default version 3.49.0
+
+> Configure project :Protocol:common
+No explicit dependency on the Checker Framework found, using default version 3.49.0
+
+> Task :animatedux:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :animatedux:generateDebugAssets UP-TO-DATE
 > Task :animatedux:preBuild UP-TO-DATE
 > Task :animatedux:preDebugBuild UP-TO-DATE
-> Task :animatedux:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :animatedux:generateDebugResources
-> Task :animatedux:extractDeepLinksForAarDebug
-> Task :animatedux:prepareLintJarForPublish
-> Task :animatedux:mergeDebugJniLibFolders
-> Task :animatedux:mergeDebugAssets
-> Task :animatedux:mergeDebugNativeLibs NO-SOURCE
-> Task :animatedux:prepareDebugArtProfile
-> Task :animatedux:stripDebugDebugSymbols NO-SOURCE
-> Task :animatedux:javaPreCompileDebug
-> Task :animatedux:copyDebugJniLibsProjectAndLocalJars
 > Task :app:preBuild UP-TO-DATE
+> Task :animatedux:generateDebugResources
+> Task :animatedux:prepareLintJarForPublish
+> Task :animatedux:extractDeepLinksForAarDebug
+> Task :animatedux:mergeDebugJniLibFolders
+> Task :animatedux:mergeDebugNativeLibs NO-SOURCE
+> Task :animatedux:mergeDebugAssets
+> Task :animatedux:stripDebugDebugSymbols NO-SOURCE
+> Task :animatedux:copyDebugJniLibsProjectAndLocalJars
+> Task :animatedux:javaPreCompileDebug
+> Task :animatedux:prepareDebugArtProfile
+> Task :animatedux:writeDebugAarMetadata
 > Task :app:preDebugBuild UP-TO-DATE
 > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
-> Task :animatedux:writeDebugAarMetadata
 > Task :Network:transport-raknet:processResources NO-SOURCE
 > Task :animatedux:packageDebugResources
+> Task :Network:transport-raknet:generateEffectiveLombokConfig
 > Task :animatedux:processDebugManifest
 > Task :minecraft-msftauth:processResources NO-SOURCE
-> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :Network:transport-raknet:generateEffectiveLombokConfig
-> Task :app:generateDebugResources
-> Task :app:packageDebugResources
+> Task :Protocol:bedrock-codec:generateEffectiveLombokConfig FROM-CACHE
+> Task :Protocol:common:generateEffectiveLombokConfig FROM-CACHE
 > Task :animatedux:parseDebugLocalResources
-> Task :app:parseDebugLocalResources
 > Task :animatedux:generateDebugRFile
-> Task :app:generateDebugRFile
+
+Note: /home/runner/work/ZephyrMC/ZephyrMC/minecraft-msftauth/src/main/java/coelho/msftauth/util/der/DerInputStream.java uses unchecked or unsafe operations.
+> Task :minecraft-msftauth:compileJava
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :Protocol:common:delombok
+
+Note: Some input files use or override a deprecated API.
+> Task :Network:transport-raknet:compileJava
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :Network:transport-raknet:classes
+> Task :Network:transport-raknet:jar
+> Task :Protocol:bedrock-connection:generateEffectiveLombokConfig FROM-CACHE
+> Task :Protocol:bedrock-connection:processResources NO-SOURCE
+> Task :Protocol:bedrock-codec:processResources NO-SOURCE
+> Task :Protocol:common:processResources NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugResources
+> Task :minecraft-msftauth:classes
+> Task :minecraft-msftauth:jar
 > Task :Lunaris:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :Lunaris:preBuild UP-TO-DATE
 > Task :Lunaris:preDebugBuild UP-TO-DATE
 > Task :Lunaris:generateDebugResources
 > Task :Lunaris:packageDebugResources
-Note: /home/runner/work/ZephyrMC/ZephyrMC/minecraft-msftauth/src/main/java/coelho/msftauth/util/der/DerInputStream.java uses unchecked or unsafe operations.
-
-Note: Recompile with -Xlint:unchecked for details.
-> Task :minecraft-msftauth:compileJava
-Note: Some input files use or override a deprecated API.
-
-Note: Recompile with -Xlint:deprecation for details.
-> Task :Lunaris:parseDebugLocalResources
-Note: Some input files use unchecked or unsafe operations.
-> Task :Lunaris:generateDebugRFile
-Note: Recompile with -Xlint:unchecked for details.
+> Task :app:packageDebugResources
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
 > Task :Lunaris:javaPreCompileDebug FROM-CACHE
 > Task :lunarisrpc:preBuild UP-TO-DATE
 > Task :lunarisrpc:preDebugBuild UP-TO-DATE
 > Task :lunarisrpc:generateDebugResources FROM-CACHE
-
-> Task :Network:transport-raknet:compileJava
-
-> Task :Network:transport-raknet:classes
-> Task :Network:transport-raknet:jar
 > Task :lunarisrpc:packageDebugResources
-> Task :lunarisrpc:javaPreCompileDebug FROM-CACHE
-> Task :Pixie:preBuild UP-TO-DATE
-> Task :Pixie:preDebugBuild UP-TO-DATE
 > Task :lunarisrpc:parseDebugLocalResources
 > Task :lunarisrpc:generateDebugRFile
-> Task :minecraft-msftauth:classes
-> Task :minecraft-msftauth:jar
-> Task :Pixie:dataBindingMergeDependencyArtifactsDebug
-> Task :Pixie:generateDebugResources
-> Task :Pixie:packageDebugResources
-> Task :Pixie:parseDebugLocalResources
+> Task :lunarisrpc:javaPreCompileDebug FROM-CACHE
+> Task :Lunaris:parseDebugLocalResources
+
+warning: The following options were not recognized by any processor: '[suppressWarnings]'
+> Task :Protocol:common:compileJava
+Note: /home/runner/work/ZephyrMC/ZephyrMC/Protocol/common/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/common/util/Int2ObjectBiMap.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/runner/work/ZephyrMC/ZephyrMC/Protocol/common/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/common/util/Zlib.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+> Task :Lunaris:generateDebugRFile
+> Task :Pixie:preBuild UP-TO-DATE
+> Task :Pixie:preDebugBuild UP-TO-DATE
 > Task :lunarisrpc:compileDebugJavaWithJavac
+> Task :Protocol:common:classes
+> Task :Protocol:common:jar
 > Task :lunarisrpc:bundleLibCompileToJarDebug
-> Task :Pixie:generateDebugRFile
+> Task :Pixie:generateDebugResources
+> Task :Pixie:dataBindingMergeDependencyArtifactsDebug
 > Task :Pixie:javaPreCompileDebug FROM-CACHE
 > Task :SSC:preBuild UP-TO-DATE
 > Task :SSC:preDebugBuild UP-TO-DATE
 > Task :SSC:generateDebugResources
-> Task :Pixie:dataBindingGenBaseClassesDebug
 > Task :SSC:packageDebugResources
 > Task :SSC:parseDebugLocalResources
 > Task :SSC:generateDebugRFile
@@ -115,12 +141,19 @@ Note: Recompile with -Xlint:unchecked for details.
 > Task :TablerIcons:preBuild UP-TO-DATE
 > Task :TablerIcons:preDebugBuild UP-TO-DATE
 > Task :TablerIcons:generateDebugBuildConfig
+> Task :Pixie:packageDebugResources
 > Task :TablerIcons:generateDebugResources
+> Task :Pixie:parseDebugLocalResources
+> Task :Pixie:dataBindingGenBaseClassesDebug
+> Task :Pixie:generateDebugRFile
+> Task :TablerIcons:packageDebugResources
 Note: Some input files use or override a deprecated API.
 
-Note: Recompile with -Xlint:deprecation for details.
 > Task :Pixie:compileDebugJavaWithJavac
+Note: Recompile with -Xlint:deprecation for details.
 
+> Task :TablerIcons:parseDebugLocalResources
+> Task :TablerIcons:generateDebugRFile
 > Task :Pixie:bundleLibCompileToJarDebug
 > Task :TablerIcons:javaPreCompileDebug FROM-CACHE
 > Task :app:javaPreCompileDebug FROM-CACHE
@@ -135,353 +168,202 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :SSC:mergeDebugAssets
 > Task :TablerIcons:generateDebugAssets UP-TO-DATE
 > Task :TablerIcons:mergeDebugAssets
-> Task :TablerIcons:packageDebugResources
-> Task :TablerIcons:parseDebugLocalResources
-> Task :TablerIcons:generateDebugRFile
+> Task :animatedux:compileDebugKotlin
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityDataTypes.java:62: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final EntityDataType<BlockDefinition> CARRY_BLOCK_STATE = new EntityDataType<>(BlockDefinition.class, "CARRY_BLOCK_STATE");
+                                                        ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/response/ItemStackResponseContainer.java:19: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+
+> Task :Protocol:bedrock-codec:delombok
+    ContainerSlotType container;
+                      ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/TextProcessingEventOrigin.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    SLASH_COMMAND_NON_CHAT,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/TextProcessingEventOrigin.java:23: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    SCOREBOARD_TEXT,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/TextProcessingEventOrigin.java:28: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    TICKING_AREA_TEXT,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/action/ItemStackRequestActionType.java:25: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    PLACE_IN_ITEM_CONTAINER,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/action/ItemStackRequestActionType.java:29: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    TAKE_FROM_ITEM_CONTAINER
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public float rowingTime;
+                 ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:48: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+        ROW_RIGHT,
+        ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:52: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+        ROW_LEFT,
+        ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/InventoryContentPacket.java:28: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public int dynamicContainerSize;
+               ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/InventorySlotPacket.java:26: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public int dynamicContainerSize;
+               ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/PlayerAuthInputPacket.java:31: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public Vector3f vrGazeDirection;
+                    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/PlayerInputPacket.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+public class PlayerInputPacket implements BedrockPacket {
+       ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/RiderJumpPacket.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+public class RiderJumpPacket implements BedrockPacket {
+       ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/ResourcePacksInfoPacket.java:17: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public final List<Entry> behaviorPackInfos = new ObjectArrayList<>();
+                             ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/ResourcePacksInfoPacket.java:29: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public boolean forcingServerPacksEnabled;
+                   ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/StartGamePacket.java:101: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public AuthoritativeMovementMode authoritativeMovementMode;
+                                     ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/StartGamePacket.java:112: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public List<ItemDefinition> itemDefinitions = new ObjectArrayList<>();
+                                ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/BiomeDefinitionListPacket.java:21: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public NbtMap definitions;
+                  ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/CodeBuilderSourcePacket.java:21: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public String value;
+                  ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/CameraAimAssistPresetsPacket.java:22: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public final List<CameraAimAssistCategories> categories = new ObjectArrayList<>();
+                                                 ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityFlag.java:118: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    SCENTING,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityFlag.java:123: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    RISING,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityFlag.java:128: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    FEELING_HAPPY,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/camera/CameraAimAssistPresetDefinition.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    private String categories;
+                   ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/camera/CameraAimAssistPresetDefinition.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    private final List<String> exclusionList = new ObjectArrayList<>();
+                               ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/AuthoritativeMovementMode.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    CLIENT,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/camera/CameraPreset.java:75: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    private OptionalBoolean alignTargetAndCameraForward = OptionalBoolean.empty();
+                            ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/structure/StructureTemplateResponseType.java:11: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    IMPORT;
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/structure/StructureTemplateRequestOperation.java:12: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    IMPORT;
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/DisconnectFailReason.java:96: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    REALMS_SESSION_NOT_FOUND_DEPRECATED,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/PlayerAuthInputData.java:9: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    NORTH_JUMP,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/InputMode.java:11: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    MOTION_CONTROLLER;
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:10: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    VIEWER,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    REALITY,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    PLACEMENT,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:22: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    LIVING_ROOM,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:27: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    EXIT_LEVEL_LIVING_ROOM
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/ItemStackRequestSlotData.java:17: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    ContainerSlotType container;
+                      ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/ContainerId.java:52: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final int CONTAINER_ID_REGISTRY_INVENTORY = 126;
+                            ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityDamageCause.java:40: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    MACE_SMASH;
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/LevelEvent.java:118: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    PARTICLE_CREAKING_HEART_TRIAL,
+    ^
+
 > Task :app:mergeDebugAssets
 > Task :app:compressDebugAssets
 > Task :Pixie:bundleLibRuntimeToJarDebug
 > Task :SSC:bundleLibRuntimeToJarDebug
 > Task :lunarisrpc:bundleLibRuntimeToJarDebug
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:16:12 Unresolved reference 'allaymc'.
+> Task :app:desugarDebugFileDependencies
+> Task :animatedux:compileDebugLibraryResources
+> Task :Lunaris:writeDebugAarMetadata
+> Task :lunarisrpc:writeDebugAarMetadata
+> Task :Pixie:writeDebugAarMetadata
+> Task :TablerIcons:compileDebugKotlin
+> Task :SSC:writeDebugAarMetadata
+> Task :TablerIcons:writeDebugAarMetadata
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+warning: The following options were not recognized by any processor: '[suppressWarnings]'
 
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:17:12 Unresolved reference 'allaymc'.
-> Task :Lunaris:compileDebugKotlin
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:18:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:19:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:20:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:21:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:22:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:27:32 Unresolved reference 'BedrockPong'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:31:27 Unresolved reference 'BedrockCodec'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:31:42 Unresolved reference 'Bedrock_v1001'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:43:62 Unresolved reference 'BedrockPong'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:65:14 Unresolved reference 'ipv4Port'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:71:71 Unresolved reference 'toByteBuf'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:73:27 Argument type mismatch: actual type is 'com.project.zephyr.relay.<anonymous>', but 'io.netty.channel.ChannelHandler!' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:73:36 Unresolved reference 'BedrockChannelInitializer'.
+> Task :Protocol:bedrock-codec:compileJava
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/entity/EntityDataTypes.java:57: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final EntityDataType<BlockDefinition> CARRY_BLOCK_STATE = new EntityDataType<>(BlockDefinition.class, "CARRY_BLOCK_STATE");
+                                                        ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/response/ItemStackResponseContainer.java:16: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    private final ContainerSlotType container;
+                                    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/response/ItemStackResponseContainer.java:37: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public ItemStackResponseContainer(final ContainerSlotType container, final List<ItemStackResponseSlot> items, final FullContainerName containerName) {
+           ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/TextProcessingEventOrigin.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    SLASH_COMMAND_NON_CHAT,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/TextProcessingEventOrigin.java:23: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    SCOREBOARD_TEXT,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/TextProcessingEventOrigin.java:28: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    TICKING_AREA_TEXT,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/action/ItemStackRequestActionType.java:25: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    PLACE_IN_ITEM_CONTAINER,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/action/ItemStackRequestActionType.java:29: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    TAKE_FROM_ITEM_CONTAINER
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:10: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public float rowingTime;
+                 ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:36: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+        ROW_RIGHT, /**
+        ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:39: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+        ROW_LEFT;
+        ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/InventoryContentPacket.java:21: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public int dynamicContainerSize;
+               ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/InventorySlotPacket.java:20: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public int dynamicContainerSize;
+               ^
 
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:74:17 'createSession0' overrides nothing.
-> Task :Lunaris:compileDebugKotlin FAILED
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:74:51 Unresolved reference 'BedrockPeer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:83:17 'initSession' overrides nothing.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:84:17 'preInitChannel' overrides nothing.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:85:29 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:85:29 Not enough information to infer type argument for 'T'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:85:34 Unresolved reference 'PacketDirection'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:85:65 Unresolved reference 'PacketDirection'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:86:21 Unresolved reference 'BedrockChannelInitializer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:86:27 Unresolved reference 'preInitChannel'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:106:88 Unresolved reference 'codec'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:110:22 Argument type mismatch: actual type is 'com.project.zephyr.relay.<anonymous>', but 'io.netty.channel.ChannelHandler!' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:110:31 Unresolved reference 'BedrockChannelInitializer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:111:17 'createSession0' overrides nothing.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:111:51 Unresolved reference 'BedrockPeer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:115:17 'initSession' overrides nothing.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:120:17 'preInitChannel' overrides nothing.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:121:29 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:121:29 Not enough information to infer type argument for 'T'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:121:34 Unresolved reference 'PacketDirection'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:121:65 Unresolved reference 'PacketDirection'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:122:21 Unresolved reference 'BedrockChannelInitializer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:122:27 Unresolved reference 'preInitChannel'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:6:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:7:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:8:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:9:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:10:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:11:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:14:32 Unresolved reference 'BedrockPeer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:17:41 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:22:17 Unresolved reference 'codec'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:22:32 Unresolved reference 'codec'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:23:17 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:23:34 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:23:40 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:24:21 Unresolved reference 'blockDefinitions'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:24:47 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:25:21 Unresolved reference 'itemDefinitions'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:25:46 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:26:21 Unresolved reference 'cameraPresetDefinitions'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:26:54 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:27:21 Unresolved reference 'encodingSettings'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:27:47 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:30:36 Unresolved reference 'sendPacketImmediately'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:30:71 Unresolved reference 'sendPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:37:29 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:37:53 Unresolved reference 'sendPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:38:40 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:38:64 Unresolved reference 'sendPacketImmediately'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:40:29 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:41:17 Unresolved reference 'sendPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:41:55 Argument type mismatch: actual type is 'kotlin.Pair<A, B>', but 'kotlin.Pair<ERROR CLASS: Symbol not found for BedrockPacket, kotlin.Boolean>!' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:41:62 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:41:62 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:
-fun <A, B> A.to(that: B): Pair<A, B>
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:43:40 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:44:17 Unresolved reference 'sendPacketImmediately'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:44:66 Argument type mismatch: actual type is 'kotlin.Pair<A, B>', but 'kotlin.Pair<ERROR CLASS: Symbol not found for BedrockPacket, kotlin.Boolean>!' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:44:73 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:44:73 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:
-fun <A, B> A.to(that: B): Pair<A, B>
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:48:49 Unresolved reference 'disconnect'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:53:40 Unresolved reference 'BedrockPacketWrapper'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:55:42 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:61:9 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:61:9 Not enough information to infer type argument for 'R'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:62:13 Unresolved reference 'UnknownPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:62:29 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:62:35 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:63:17 Unresolved reference 'payload'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:63:35 Unresolved reference 'packetBuffer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:63:82 Unresolved reference 'headerLength'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:64:17 Unresolved reference 'packetId'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:64:36 Unresolved reference 'packetId'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:65:15 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:65:15 Not enough information to infer type argument for 'T'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:65:15 Not enough information to infer type argument for 'R'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:65:19 Argument type mismatch: actual type is 'kotlin.Function1<ERROR CLASS: Symbol not found for BedrockPacket, kotlin.Unit>', but 'kotlin.Function1<T, R>' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:66:11 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:66:11 Not enough information to infer type argument for 'T'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:77:37 Unresolved reference 'BedrockPeer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:77:70 Unresolved reference 'BedrockServerSession'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:78:16 Unresolved reference 'packetHandler'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:80:9 'onPacket' overrides nothing.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:80:40 Unresolved reference 'BedrockPacketWrapper'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:82:44 Unresolved reference 'packet'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:84:43 Unresolved reference 'packet'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:88:37 Unresolved reference 'BedrockPeer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:88:70 Unresolved reference 'BedrockClientSession'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:89:16 Unresolved reference 'packetHandler'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:91:9 'onPacket' overrides nothing.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:91:40 Unresolved reference 'BedrockPacketWrapper'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:93:44 Unresolved reference 'packet'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelaySession.kt:95:43 Unresolved reference 'packet'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/CameraPresetDefinition.kt:3:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/CameraPresetDefinition.kt:4:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/CameraPresetDefinition.kt:10:5 Unresolved reference 'NamedDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/CameraPresetDefinition.kt:13:38 Unresolved reference 'CameraPreset'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/CameraPresetDefinition.kt:14:50 Unresolved reference 'identifier'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/CameraPresetDefinition.kt:18:5 'getRuntimeId' overrides nothing.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/CameraPresetDefinition.kt:22:5 'getIdentifier' overrides nothing.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:6:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:7:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:8:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:9:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:10:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:17:26 Unresolved reference 'DefinitionRegistry'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:17:45 Unresolved reference 'ItemDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:17:63 Unresolved reference 'SimpleDefinitionRegistry'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:17:96 Unresolved reference 'ItemDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:20:27 Unresolved reference 'DefinitionRegistry'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:20:46 Unresolved reference 'BlockDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:21:9 Unresolved reference 'SimpleDefinitionRegistry'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:21:42 Unresolved reference 'BlockDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:24:34 Unresolved reference 'DefinitionRegistry'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:24:53 Unresolved reference 'NamedDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:24:72 Unresolved reference 'SimpleDefinitionRegistry'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:24:105 Unresolved reference 'NamedDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:27:33 Unresolved reference 'DefinitionRegistry'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:27:52 Unresolved reference 'BlockDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:28:9 Unresolved reference 'SimpleDefinitionRegistry'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:28:42 Unresolved reference 'BlockDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:6:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:7:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:13:5 Unresolved reference 'DefinitionRegistry'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:13:24 Unresolved reference 'BlockDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:25:5 'getDefinition' overrides nothing.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:25:49 Unresolved reference 'BlockDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:29:5 'isRegistered' overrides nothing.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:29:43 Unresolved reference 'BlockDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:30:66 Unresolved reference 'runtimeId'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:34:74 Unresolved reference 'BlockDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:35:9 'getRuntimeId' overrides nothing.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/handler/SessionCloseHandler.kt:3:12 Unresolved reference 'kyori'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/handler/SessionCloseHandler.kt:4:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/handler/SessionCloseHandler.kt:6:75 Unresolved reference 'BedrockPacketHandler'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/handler/SessionCloseHandler.kt:8:5 'onDisconnect' overrides nothing.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:5:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:6:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:7:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:8:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:9:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:10:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:11:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:24:74 Unresolved reference 'BedrockCodec'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:27:43 Unresolved reference 'BedrockCodec'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:27:58 Unresolved reference 'BedrockCodec'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:28:40 Unresolved reference 'protocolVersion'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:29:19 Unresolved reference 'toBuilder'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:30:35 Unresolved reference 'InventoryContentPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:30:65 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:30:65 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:
-val <T> KClass<T>.java: Class<T>
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:30:71 Unresolved reference 'InventoryContentSerializer_v729'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:31:35 Unresolved reference 'InventorySlotPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:31:62 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:31:62 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:
-val <T> KClass<T>.java: Class<T>
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:31:68 Unresolved reference 'InventorySlotSerializer_v729'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:32:35 Unresolved reference 'BiomeDefinitionListPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:32:68 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:32:68 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:
-val <T> KClass<T>.java: Class<T>
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:32:74 Unresolved reference 'BiomeDefinitionListSerializer_v313'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:39:44 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:40:23 Unresolved reference 'RequestNetworkSettingsPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:41:42 Unresolved reference 'protocolVersion'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:43:39 Unresolved reference 'codec'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:44:39 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:44:56 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:44:62 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:45:17 Unresolved reference 'itemDefinitions'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:46:17 Unresolved reference 'blockDefinitions'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:47:17 Unresolved reference 'cameraPresetDefinitions'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:48:17 Unresolved reference 'encodingSettings'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:48:36 Unresolved reference 'EncodingSettings'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:57:41 Unresolved reference 'NetworkSettingsPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:59:58 Unresolved reference 'PacketCompressionAlgorithm'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:62:39 Unresolved reference 'setCompression'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:62:54 Unresolved reference 'PacketCompressionAlgorithm'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/BiomeDefinitionListPacketListener.kt:4:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/BiomeDefinitionListPacketListener.kt:5:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/BiomeDefinitionListPacketListener.kt:17:44 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/BiomeDefinitionListPacketListener.kt:18:23 Unresolved reference 'BiomeDefinitionListPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/BiomeDefinitionListPacketListener.kt:24:44 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/BiomeDefinitionListPacketListener.kt:25:23 Unresolved reference 'BiomeDefinitionListPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/BiomeDefinitionListPacketListener.kt:31:57 Unresolved reference 'BiomeDefinitionListPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/BiomeDefinitionListPacketListener.kt:37:38 Unresolved reference 'BiomeDefinitionListPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/BiomeDefinitionListPacketListener.kt:57:44 Unresolved reference 'BiomeDefinitionListPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/BiomeDefinitionListPacketListener.kt:62:20 Unresolved reference 'biomes'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:7:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:8:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:9:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:10:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:11:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:17:38 Unresolved reference 'EncryptionUtils'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:18:32 Unresolved reference 'LoginPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:21:44 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:22:23 Unresolved reference 'LoginPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:29:24 Unresolved reference 'authPayload'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:29:38 Unresolved reference 'CertificateChainPayload'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:29:80 Unresolved reference 'AuthType'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:32:24 Unresolved reference 'clientJwt'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:36:43 Unresolved reference 'disconnect'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:47:44 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:49:16 Unresolved reference 'NetworkSettingsPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:50:40 Unresolved reference 'compressionThreshold'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:52:49 Unresolved reference 'setCompression'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:52:71 Unresolved reference 'compressionAlgorithm'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:54:49 Unresolved reference 'setCompression'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:54:64 Unresolved reference 'PacketCompressionAlgorithm'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:58:17 Argument type mismatch: actual type is 'R?', but 'K?' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:58:30 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:58:30 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:
-fun <T, R> T.let(block: (T) -> R): R
-    [R|Contract description]
-     <
-        CallsInPlace(block, EXACTLY_ONCE)
-    >
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:58:34 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:60:22 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:60:22 Argument type mismatch: actual type is 'R', but 'K' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:61:47 Unresolved reference 'disconnect'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:66:16 Unresolved reference 'ServerToClientHandshakePacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:69:43 Unresolved reference 'jwt'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:77:37 Unresolved reference 'EncryptionUtils'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:80:31 Unresolved reference 'EncryptionUtils'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:87:49 Unresolved reference 'enableEncryption'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:90:63 Unresolved reference 'ClientToServerHandshakePacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:93:47 Unresolved reference 'disconnect'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:102:28 Unresolved reference 'ZephyrRelay'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:104:26 Unresolved reference 'RequestNetworkSettingsPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:105:64 Unresolved reference 'codec'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:111:42 Unresolved reference 'LoginPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:114:20 Unresolved reference 'authPayload'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:114:35 Unresolved reference 'CertificateChainPayload'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:115:33 Unresolved reference 'authPayload'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:115:48 Unresolved reference 'CertificateChainPayload'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:115:73 Unresolved reference 'chain'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:118:27 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:118:29 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:126:21 'return' is prohibited here.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:139:41 Unresolved reference 'LoginPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:140:34 Unresolved reference 'clientJwt'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:6:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:7:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:8:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:9:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:10:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:11:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:18:44 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:19:23 Unresolved reference 'StartGamePacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:20:43 Unresolved reference 'SimpleDefinitionRegistry'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:20:76 Unresolved reference 'ItemDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:21:32 Unresolved reference 'itemDefinitions'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:22:18 Unresolved reference 'build'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:24:41 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:25:39 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:27:24 Unresolved reference 'isBlockNetworkIdsHashed'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:28:45 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:29:43 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:31:45 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:32:43 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:35:23 Unresolved reference 'CameraPresetsPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:37:17 Unresolved reference 'SimpleDefinitionRegistry'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:37:50 Unresolved reference 'NamedDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:38:41 Unresolved reference 'presets'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:39:65 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:39:72 Unresolved reference 'presets'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:41:22 Unresolved reference 'build'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:43:41 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:44:39 Unresolved reference 'peer'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:5:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:6:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:7:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:8:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:9:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:39:44 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:40:23 Unresolved reference 'LoginPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:42:24 Unresolved reference 'authPayload'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:42:38 Unresolved reference 'CertificateChainPayload'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:42:69 Unresolved reference 'AuthType'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:44:47 Unresolved reference 'clientJwt'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:47:50 Unresolved reference 'clientJwt'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:50:24 Unresolved reference 'clientJwt'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:53:40 Unresolved reference 'DisconnectPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:55:50 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:55:50 'val <T : Any> KClass<T>.javaClass: Class<KClass<T>>' is deprecated. Use 'java' property to get Java class corresponding to this Kotlin class or cast this instance to Any if you really want to get the runtime Java class of this implementation of KClass.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:74:51 Unresolved reference 'LoginPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:75:20 Unresolved reference 'authPayload'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:75:35 Unresolved reference 'CertificateChainPayload'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:76:33 Unresolved reference 'authPayload'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:76:48 Unresolved reference 'CertificateChainPayload'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:76:73 Unresolved reference 'chain'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:78:27 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:78:29 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/XboxLoginPacketListener.kt:81:21 'return' is prohibited here.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/ZephyrRelayPacketListener.kt:3:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/ZephyrRelayPacketListener.kt:7:35 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/ZephyrRelayPacketListener.kt:11:35 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/ZephyrRelayPacketListener.kt:15:34 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/ZephyrRelayPacketListener.kt:17:34 Unresolved reference 'BedrockPacket'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/CodecDebugHelper.kt:3:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/CodecDebugHelper.kt:10:31 Unresolved reference 'BedrockCodec'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/CodecDebugHelper.kt:14:44 Unresolved reference 'protocolVersion'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/CodecDebugHelper.kt:15:45 Unresolved reference 'minecraftVersion'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/CodecDebugHelper.kt:16:43 Unresolved reference 'raknetProtocolVersion'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/CodecDebugHelper.kt:20:38 Unresolved reference 'BedrockCodec'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/CodecDebugHelper.kt:21:28 Unresolved reference 'protocolVersion'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/CodecDebugHelper.kt:35:31 Unresolved reference 'BedrockCodec'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/CodecDebugHelper.kt:35:53 Unresolved reference 'BedrockCodec'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/CodecDebugHelper.kt:39:45 Unresolved reference 'protocolVersion'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/CodecDebugHelper.kt:40:45 Unresolved reference 'protocolVersion'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/CodecDebugHelper.kt:41:34 Unresolved reference 'protocolVersion'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/CodecDebugHelper.kt:41:60 Unresolved reference 'protocolVersion'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/MinecraftRelays.kt:6:12 Unresolved reference 'allaymc'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/util/MinecraftRelays.kt:19:20 Unresolved reference 'BedrockPong'.
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/PlayerAuthInputPacket.java:24: warning: [dep-ann] deprecated item is not annotated with @Deprecated
 > Task :animatedux:compileDebugKotlin
+    public Vector3f vrGazeDirection;
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr/zephyrux/MainActivity.kt:93:26 'var systemUiVisibility: Int' is deprecated. Deprecated in Java.
+                    ^
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr/zephyrux/MainActivity.kt:94:22 'static field SYSTEM_UI_FLAG_IMMERSIVE_STICKY: Int' is deprecated. Deprecated in Java.
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr/zephyrux/MainActivity.kt:95:33 'static field SYSTEM_UI_FLAG_LAYOUT_STABLE: Int' is deprecated. Deprecated in Java.
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr/zephyrux/MainActivity.kt:96:33 'static field SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN: Int' is deprecated. Deprecated in Java.
@@ -512,16 +394,232 @@ w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr/zephyrux/components/VideoBackground.kt:103:13 'constructor(p0: Context): PlayerView' is deprecated. Deprecated in Java.
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr/zephyrux/components/VideoBackground.kt:106:30 'class AspectRatioFrameLayout : FrameLayout' is deprecated. Deprecated in Java.
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr/zephyrux/components/VideoBackground.kt:107:34 'class PlayerView : FrameLayout, AdViewProvider' is deprecated. Deprecated in Java.
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/PlayerInputPacket.java:9: warning: [dep-ann] deprecated item is not annotated with @Deprecated
 
-> Task :TablerIcons:compileDebugKotlin
+public class PlayerInputPacket implements BedrockPacket {
+> Task :Protocol:bedrock-codec:compileJava
+       ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/RiderJumpPacket.java:8: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+public class RiderJumpPacket implements BedrockPacket {
+       ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/ResourcePacksInfoPacket.java:13: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public final List<Entry> behaviorPackInfos = new ObjectArrayList<>();
+                             ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/ResourcePacksInfoPacket.java:25: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public boolean forcingServerPacksEnabled;
+                   ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/StartGamePacket.java:94: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public AuthoritativeMovementMode authoritativeMovementMode;
+                                     ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/StartGamePacket.java:105: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public List<ItemDefinition> itemDefinitions = new ObjectArrayList<>();
+                                ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/BiomeDefinitionListPacket.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public NbtMap definitions;
+                  ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/CodeBuilderSourcePacket.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public String value;
+                  ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/CameraAimAssistPresetsPacket.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public final List<CameraAimAssistCategories> categories = new ObjectArrayList<>();
+                                                 ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/entity/EntityFlag.java:118: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    SCENTING,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/entity/EntityFlag.java:123: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    RISING,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/entity/EntityFlag.java:128: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    FEELING_HAPPY,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/camera/CameraAimAssistPresetDefinition.java:11: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    private String categories;
+                   ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/camera/CameraAimAssistPresetDefinition.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    private final List<String> exclusionList = new ObjectArrayList<>();
+                               ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/AuthoritativeMovementMode.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    CLIENT,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/camera/CameraPreset.java:62: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    private OptionalBoolean alignTargetAndCameraForward;
+                            ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/camera/CameraPreset.java:963: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public CameraPreset(final String identifier, final String parentPreset, final Vector3f pos, final Float yaw, final Float pitch, final Vector2f viewOffset, final Float radius, final Float minYawLimit, final Float maxYawLimit, final CameraAudioListener listener, final OptionalBoolean playEffect, final Float rotationSpeed, final OptionalBoolean snapToTarget, final Vector3f entityOffset, final Vector2f horizontalRotationLimit, final Vector2f verticalRotationLimit, final OptionalBoolean continueTargeting, final OptionalBoolean alignTargetAndCameraForward, final Float blockListeningRadius, final CameraAimAssistPreset aimAssistPreset, @Nullable final ControlScheme controlScheme) {
+           ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/structure/StructureTemplateResponseType.java:11: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    IMPORT;
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/structure/StructureTemplateRequestOperation.java:12: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    IMPORT;
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/DisconnectFailReason.java:96: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    REALMS_SESSION_NOT_FOUND_DEPRECATED,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/PlayerAuthInputData.java:9: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    NORTH_JUMP,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/InputMode.java:11: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    MOTION_CONTROLLER;
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:10: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    VIEWER,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    REALITY,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    PLACEMENT,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:22: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    LIVING_ROOM,
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:27: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    EXIT_LEVEL_LIVING_ROOM
+    ^
+
+> Task :TablerIcons:compileDebugJavaWithJavac
+> Task :animatedux:compileDebugJavaWithJavac NO-SOURCE
+> Task :animatedux:mergeDebugGeneratedProguardFiles
+> Task :animatedux:mergeDebugConsumerProguardFiles
+> Task :animatedux:processDebugJavaRes
+> Task :animatedux:mergeDebugJavaResource
+> Task :animatedux:bundleLibCompileToJarDebug
+> Task :TablerIcons:bundleLibCompileToJarDebug
+> Task :animatedux:bundleLibRuntimeToJarDebug
+
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/ItemStackRequestSlotData.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+> Task :Protocol:bedrock-codec:compileJava
+    private final ContainerSlotType container;
+                                    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/ItemStackRequestSlotData.java:45: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public ItemStackRequestSlotData(final ContainerSlotType container, final int slot, final int stackNetworkId, final FullContainerName containerName) {
+           ^
+
+> Task :app:mergeDebugResources
+> Task :TablerIcons:bundleLibRuntimeToJarDebug
+> Task :app:createDebugCompatibleScreenManifests
+> Task :animatedux:extractDeepLinksDebug
+> Task :app:extractDeepLinksDebug FROM-CACHE
+> Task :Lunaris:extractDeepLinksDebug FROM-CACHE
+> Task :Lunaris:processDebugManifest
+> Task :lunarisrpc:extractDeepLinksDebug FROM-CACHE
+> Task :lunarisrpc:processDebugManifest
+> Task :Pixie:extractDeepLinksDebug FROM-CACHE
+> Task :Pixie:processDebugManifest
+> Task :SSC:extractDeepLinksDebug FROM-CACHE
+> Task :SSC:processDebugManifest
+> Task :TablerIcons:extractDeepLinksDebug FROM-CACHE
+> Task :TablerIcons:processDebugManifest
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/ContainerId.java:44: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+
+> Task :Protocol:bedrock-codec:compileJava
+    public static final int CONTAINER_ID_REGISTRY_INVENTORY = 126;
+                            ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/entity/EntityDamageCause.java:40: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    MACE_SMASH;
+    ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/LevelEvent.java:118: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    PARTICLE_CREAKING_HEART_TRIAL,
+    ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+47 warnings
+
+> Task :app:processDebugMainManifest
+/home/runner/work/ZephyrMC/ZephyrMC/app/src/main/AndroidManifest.xml:9:5-77 Warning:
+	Element uses-permission#android.permission.FOREGROUND_SERVICE at AndroidManifest.xml:9:5-77 duplicated with element declared at AndroidManifest.xml:8:5-77
+
+> Task :app:processDebugManifest
+> Task :Lunaris:compileDebugLibraryResources
+> Task :lunarisrpc:compileDebugLibraryResources FROM-CACHE
+> Task :app:processDebugManifestForPackage
+> Task :Pixie:compileDebugLibraryResources
+> Task :SSC:compileDebugLibraryResources
+> Task :lunarisrpc:processDebugJavaRes NO-SOURCE
+> Task :Pixie:processDebugJavaRes NO-SOURCE
+> Task :SSC:processDebugJavaRes NO-SOURCE
+> Task :TablerIcons:processDebugJavaRes
+> Task :animatedux:extractDebugAnnotations
+> Task :animatedux:syncDebugLibJars
+> Task :animatedux:bundleDebugAar
+> Task :animatedux:assembleDebug
+> Task :animatedux:bundleLibRuntimeToDirDebug
+> Task :app:checkDebugDuplicateClasses
+> Task :Protocol:bedrock-codec:classes
+> Task :Protocol:bedrock-codec:jar
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/netty/codec/compression/SnappyCompression.java:13: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+
+import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
+> Task :Protocol:bedrock-connection:delombok
+                      ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/netty/codec/compression/SnappyCompression.java:13: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
+                      ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/netty/codec/compression/SnappyCompression.java:13: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
+                      ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/netty/codec/compression/SnappyCompression.java:13: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
+                      ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/netty/codec/compression/SnappyCompression.java:13: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
+                      ^
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/util/ChainValidationResult.java:131: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+        public final UUID identity;
+                          ^
+warning: The following options were not recognized by any processor: '[suppressWarnings]'
+
+> Task :Protocol:bedrock-connection:compileJava
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/util/ChainValidationResult.java:123: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+        public final UUID identity;
+                          ^
+Note: /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/util/EncryptionUtils.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 warnings
+
+> Task :Pixie:bundleLibRuntimeToDirDebug
+> Task :TablerIcons:compileDebugLibraryResources
+> Task :app:mergeExtDexDebug
+> Task :SSC:bundleLibRuntimeToDirDebug
+> Task :Protocol:bedrock-connection:classes
+> Task :Protocol:bedrock-connection:jar
+> Task :TablerIcons:bundleLibRuntimeToDirDebug
+> Task :lunarisrpc:bundleLibRuntimeToDirDebug
+> Task :animatedux:copyDebugJniLibsProjectOnly
+
+> Task :app:configureCMakeDebug[arm64-v8a]
+Checking the license for package CMake 3.22.1 in /usr/local/lib/android/sdk/licenses
+License for package CMake 3.22.1 accepted.
+Preparing "Install CMake 3.22.1 v.3.22.1".
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/EncryptedLoginPacketListener.kt:102:28 Unresolved reference 'ZephyrRelay'.
+
+> Task :Lunaris:compileDebugKotlin FAILED
+
+> Task :app:configureCMakeDebug[arm64-v8a]
+"Install CMake 3.22.1 v.3.22.1" ready.
+Installing CMake 3.22.1 in /usr/local/lib/android/sdk/cmake/3.22.1
+"Install CMake 3.22.1 v.3.22.1" complete.
+"Install CMake 3.22.1 v.3.22.1" finished.
+
+> Task :app:processDebugResources
 
 
 FAILURE: Build failed with an exception.
 
-* What went wrong:
-Execution failed for task ':Lunaris:compileDebugKotlin'.
-> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
 [Incubating] Problems report is available at: file:///home/runner/work/ZephyrMC/ZephyrMC/build/reports/problems/problems-report.html
+* What went wrong:
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+Execution failed for task ':Lunaris:compileDebugKotlin'.
+For more on this, please refer to https://docs.gradle.org/8.12.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+135 actionable tasks: 118 executed, 17 from cache
    > Compilation error. See log for more details
 
 * Try:
@@ -532,21 +630,13 @@ Execution failed for task ':Lunaris:compileDebugKotlin'.
 * Exception is:
 org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':Lunaris:compileDebugKotlin'.
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
-
 	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
-Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
-
-You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:116)
 	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:40)
 	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
 	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
 	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
-
-For more on this, please refer to https://docs.gradle.org/8.12.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
-69 actionable tasks: 62 executed, 7 from cache
-Configuration cache entry stored.
 	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
 	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
 	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
@@ -734,5 +824,7 @@ Caused by: org.jetbrains.kotlin.gradle.tasks.CompilationErrorException: Compilat
 	... 2 more
 
 
-BUILD FAILED in 2m 53s
+BUILD FAILED in 6m 3s
+Configuration cache entry stored.
 Error: Process completed with exit code 1.
+0s

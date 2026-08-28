@@ -99,7 +99,7 @@ open class EncryptedLoginPacketListener : ZephyrRelayPacketListener {
     }
 
     protected fun connectServer() {
-        ZephyrRelaySession.ZephyrRelay.connectToServer {
+        ZephyrRelaySession.zephyrRelay.connectToServer {
 
             val packet = RequestNetworkSettingsPacket()
             packet.protocolVersion = ZephyrRelaySession.server.codec.protocolVersion
