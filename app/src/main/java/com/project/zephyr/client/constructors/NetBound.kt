@@ -285,7 +285,7 @@ class NetBound(val ZephyrRelaySession: ZephyrRelaySession) : ComposedPacketHandl
         }
 
         localPlayer.onPacketBound(packet)
-      //world.onPacket(packet)
+        world.onPacket(packet)
         level.onPacketBound(packet)
 
         val event = EventPacketInbound(this, packet)

@@ -24,6 +24,9 @@ public class BedrockCodecHelper_v766 extends BedrockCodecHelper_v729 {
 
     @Override
     public <T extends Enum<?>> void readLargeVarIntFlags(ByteBuf buffer, Set<T> flags, Class<T> clazz) {
+        if (!buffer.isReadable()) {
+            return;
+        }
         BigInteger flagsInt = VarInts.readUnsignedBigVarInt(buffer, clazz.getEnumConstants().length);
         for (T flag : clazz.getEnumConstants()) {
             if (flagsInt.testBit(flag.ordinal())) {
