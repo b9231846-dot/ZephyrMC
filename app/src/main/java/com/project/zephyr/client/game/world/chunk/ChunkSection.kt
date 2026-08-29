@@ -11,27 +11,32 @@ class ChunkSection {
     var storage = BlockStorage(BitArrayVersion.V2, 0)
 
     fun read(buf: ByteBuf) {
-        val version = buf.readByte().toInt()
-        if (version in 1..10) {
-            if (version >= 9) buf.readByte()
-            val layers = if (version == 1) 1 else buf.readByte().toInt()
-            if (layers > 0) {
-                try {
-                    storage = BlockStorage(buf, true)
-                } catch (e: Exception) {
-                    Log.e("ChunkSection", "Failed to read primary block storage layer", e)
-                    storage = BlockStorage(BitArrayVersion.V2, 0)
+        try {
+            val version = buf.readByte().toInt()
+            if (version in 1..10) {
+                if (version >= 9) buf.readByte()
+                val layers = if (version == 1) 1 else buf.readByte().toInt()
+                if (layers > 0) {
+                    try {
+                        storage = BlockStorage(buf, true)
+                    } catch (e: Exception) {
+                        Log.e("ChunkSection", "Failed to read primary block storage layer", e)
+                        storage = BlockStorage(BitArrayVersion.V2, 0)
+                    }
                 }
-            }
-            repeat(layers - 1) {
-                try {
-                    BlockStorage(buf, true)
-                } catch (e: Exception) {
-                    Log.e("ChunkSection", "Failed to read additional block storage layer", e)
+                repeat(layers - 1) {
+                    try {
+                        BlockStorage(buf, true)
+                    } catch (e: Exception) {
+                        Log.e("ChunkSection", "Failed to read additional block storage layer", e)
+                    }
                 }
+            } else {
+                Log.w("ChunkSection", "Unsupported chunk version: $version, skipping...")
             }
-        } else {
-            error("Unsupported chunk version: $version")
+        } catch (e: Exception) {
+            Log.e("ChunkSection", "Error reading chunk section", e)
+            storage = BlockStorage(BitArrayVersion.V2, 0)
         }
     }
 

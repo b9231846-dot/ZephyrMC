@@ -67,14 +67,20 @@ class BlockStorage {
 
     fun getBlock(x: Int, y: Int, z: Int): Int {
         val index = (x shl 8) or (z shl 4) or y
-        return palette[bitArray.get(index)]
+        val paletteIndex = bitArray.get(index)
+        return if (paletteIndex in palette.indices) palette[paletteIndex] else 0
     }
 
     fun setBlock(x: Int, y: Int, z: Int, id: Int) {
         val index = (x shl 8) or (z shl 4) or y
-        val paletteIndex = palette.indexOf(id).takeIf { it != -1 } ?: run {
+        val existingIndex = palette.indexOf(id)
+        val paletteIndex = if (existingIndex != -1) {
+            existingIndex
+        } else if (palette.size < MAX_BLOCKS) {
             palette.add(id)
             palette.lastIndex
+        } else {
+            0
         }
         bitArray.set(index, paletteIndex)
     }

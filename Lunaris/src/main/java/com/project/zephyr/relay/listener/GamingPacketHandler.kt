@@ -3,6 +3,7 @@ package com.project.zephyr.relay.listener
 import com.project.zephyr.relay.ZephyrRelaySession
 import com.project.zephyr.relay.definition.CameraPresetDefinition
 import com.project.zephyr.relay.definition.Definitions
+import com.project.zephyr.relay.definition.NbtBlockDefinitionRegistry
 import com.project.zephyr.relay.definition.SimpleDefinitionRegistry
 import org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition
 import org.cloudburstmc.protocol.bedrock.packet.BedrockPacket
@@ -23,6 +24,14 @@ class GamingPacketHandler(
 
             ZephyrRelaySession.client!!.peer.codecHelper.itemDefinitions = Definitions.itemDefinitions
             ZephyrRelaySession.server.peer.codecHelper.itemDefinitions = Definitions.itemDefinitions
+
+            val blockPalette = packet.blockPalette
+            if (blockPalette != null && !blockPalette.isEmpty()) {
+                val blockDefs = NbtBlockDefinitionRegistry(blockPalette, false)
+                val blockDefsHashed = NbtBlockDefinitionRegistry(blockPalette, true)
+                Definitions.blockDefinitions = blockDefs
+                Definitions.blockDefinitionsHashed = blockDefsHashed
+            }
 
             if (packet.isBlockNetworkIdsHashed) {
                 ZephyrRelaySession.client!!.peer.codecHelper.blockDefinitions = Definitions.blockDefinitionsHashed
