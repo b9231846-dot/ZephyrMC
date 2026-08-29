@@ -3,12 +3,12 @@ package com.project.zephyr.relay.listener
 import com.project.zephyr.relay.ZephyrRelaySession
 import com.project.zephyr.relay.definition.CameraPresetDefinition
 import com.project.zephyr.relay.definition.Definitions
-import com.project.zephyr.relay.definition.NamedDefinition
 import com.project.zephyr.relay.definition.SimpleDefinitionRegistry
 import org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition
 import org.cloudburstmc.protocol.bedrock.packet.BedrockPacket
 import org.cloudburstmc.protocol.bedrock.packet.CameraPresetsPacket
 import org.cloudburstmc.protocol.bedrock.packet.StartGamePacket
+import org.cloudburstmc.protocol.common.NamedDefinition as CloudNamedDefinition
 
 @Suppress("MemberVisibilityCanBePrivate")
 class GamingPacketHandler(
@@ -34,7 +34,7 @@ class GamingPacketHandler(
         }
         if (packet is CameraPresetsPacket) {
             val cameraDefinitions =
-                SimpleDefinitionRegistry.builder<NamedDefinition>()
+                SimpleDefinitionRegistry.builder<CloudNamedDefinition>()
                     .addAll(List(packet.presets.size) {
                         CameraPresetDefinition.fromCameraPreset(packet.presets[it], it)
                     })

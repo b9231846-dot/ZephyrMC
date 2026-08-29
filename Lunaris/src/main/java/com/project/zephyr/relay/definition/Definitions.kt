@@ -6,6 +6,7 @@ import org.cloudburstmc.nbt.NbtUtils
 import org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition
 import org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition
 import org.cloudburstmc.protocol.common.DefinitionRegistry
+import org.cloudburstmc.protocol.common.NamedDefinition as CloudNamedDefinition
 import java.io.InputStream
 
 
@@ -19,7 +20,7 @@ object Definitions {
         SimpleDefinitionRegistry.builder<BlockDefinition>()
             .build()
 
-    var cameraPresetDefinitions: DefinitionRegistry<NamedDefinition> = SimpleDefinitionRegistry.builder<NamedDefinition>()
+    var cameraPresetDefinitions: DefinitionRegistry<CloudNamedDefinition> = SimpleDefinitionRegistry.builder<CloudNamedDefinition>()
         .build()
 
     var blockDefinitionsHashed: DefinitionRegistry<BlockDefinition> =
