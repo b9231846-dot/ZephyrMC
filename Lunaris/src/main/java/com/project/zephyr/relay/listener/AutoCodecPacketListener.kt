@@ -43,6 +43,9 @@ import org.cloudburstmc.protocol.bedrock.codec.v844.Bedrock_v844
 import org.cloudburstmc.protocol.bedrock.codec.v859.Bedrock_v859
 import org.cloudburstmc.protocol.bedrock.codec.v860.Bedrock_v860
 import org.cloudburstmc.protocol.bedrock.codec.v898.Bedrock_v898
+import org.cloudburstmc.protocol.bedrock.codec.v975.Bedrock_v975
+import org.cloudburstmc.protocol.bedrock.codec.v1001.Bedrock_v1001
+import org.cloudburstmc.protocol.bedrock.codec.v2168.Bedrock_v2168
 import org.cloudburstmc.protocol.bedrock.codec.v313.serializer.BiomeDefinitionListSerializer_v313
 import org.cloudburstmc.protocol.bedrock.codec.v729.serializer.InventoryContentSerializer_v729
 import org.cloudburstmc.protocol.bedrock.codec.v729.serializer.InventorySlotSerializer_v729

@@ -93,6 +93,7 @@ static const std::vector<CodecInfo> protocols = {
         {729, "org/cloudburstmc/protocol/bedrock/codec/v729/Bedrock_v729"},
         {748, "org/cloudburstmc/protocol/bedrock/codec/v748/Bedrock_v748"},
         {766, "org/cloudburstmc/protocol/bedrock/codec/v766/Bedrock_v766"},
+        {776, "org/cloudburstmc/protocol/bedrock/codec/v776/Bedrock_v776"},
         {786, "org/cloudburstmc/protocol/bedrock/codec/v786/Bedrock_v786"},
         {800, "org/cloudburstmc/protocol/bedrock/codec/v800/Bedrock_v800"},
         {818, "org/cloudburstmc/protocol/bedrock/codec/v818/Bedrock_v818"},
@@ -102,7 +103,9 @@ static const std::vector<CodecInfo> protocols = {
         {859, "org/cloudburstmc/protocol/bedrock/codec/v859/Bedrock_v859"},
         {860, "org/cloudburstmc/protocol/bedrock/codec/v860/Bedrock_v860"},
         {898, "org/cloudburstmc/protocol/bedrock/codec/v898/Bedrock_v898"},
-        {975, "org/cloudburstmc/protocol/bedrock/codec/v975/Bedrock_v975"}
+        {975, "org/cloudburstmc/protocol/bedrock/codec/v975/Bedrock_v975"},
+        {1001, "org/cloudburstmc/protocol/bedrock/codec/v1001/Bedrock_v1001"},
+        {2168, "org/cloudburstmc/protocol/bedrock/codec/v2168/Bedrock_v2168"}
 };
 
 extern "C" JNIEXPORT jobject JNICALL
