@@ -37,28 +37,28 @@ No explicit dependency on the Checker Framework found, using default version 3.4
 > Configure project :Protocol:common
 No explicit dependency on the Checker Framework found, using default version 3.49.0
 
-> Task :animatedux:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :animatedux:preBuild UP-TO-DATE
-> Task :animatedux:generateDebugAssets UP-TO-DATE
-> Task :app:preBuild UP-TO-DATE
 > Task :animatedux:preDebugBuild UP-TO-DATE
-> Task :animatedux:generateDebugResources FROM-CACHE
+> Task :animatedux:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :animatedux:generateDebugAssets UP-TO-DATE
 > Task :animatedux:extractDeepLinksForAarDebug FROM-CACHE
+> Task :animatedux:generateDebugResources FROM-CACHE
 > Task :animatedux:packageDebugResources FROM-CACHE
 > Task :animatedux:prepareLintJarForPublish
 > Task :animatedux:javaPreCompileDebug FROM-CACHE
 > Task :animatedux:prepareDebugArtProfile
 > Task :animatedux:mergeDebugAssets
+> Task :animatedux:processDebugManifest FROM-CACHE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
 > Task :animatedux:mergeDebugJniLibFolders
 > Task :animatedux:mergeDebugNativeLibs NO-SOURCE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
 > Task :animatedux:stripDebugDebugSymbols NO-SOURCE
 > Task :animatedux:writeDebugAarMetadata
-> Task :animatedux:processDebugManifest FROM-CACHE
-> Task :app:preDebugBuild UP-TO-DATE
-> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
-> Task :animatedux:copyDebugJniLibsProjectAndLocalJars
-> Task :Network:transport-raknet:processResources NO-SOURCE
 > Task :Network:transport-raknet:generateEffectiveLombokConfig FROM-CACHE
+> Task :Network:transport-raknet:processResources NO-SOURCE
+> Task :animatedux:copyDebugJniLibsProjectAndLocalJars
 > Task :minecraft-msftauth:processResources NO-SOURCE
 > Task :animatedux:parseDebugLocalResources FROM-CACHE
 > Task :Protocol:bedrock-codec:generateEffectiveLombokConfig FROM-CACHE
@@ -71,20 +71,20 @@ No explicit dependency on the Checker Framework found, using default version 3.4
 > Task :Network:transport-raknet:compileJava FROM-CACHE
 > Task :Network:transport-raknet:classes UP-TO-DATE
 > Task :minecraft-msftauth:jar
-> Task :Network:transport-raknet:jar
 > Task :Protocol:bedrock-connection:generateEffectiveLombokConfig FROM-CACHE
 > Task :Protocol:bedrock-connection:processResources NO-SOURCE
 > Task :Protocol:bedrock-codec:processResources NO-SOURCE
 > Task :Protocol:common:processResources NO-SOURCE
 > Task :Protocol:common:classes UP-TO-DATE
+> Task :Network:transport-raknet:jar
 > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :Protocol:common:jar
 > Task :Lunaris:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :Lunaris:preBuild UP-TO-DATE
 > Task :Lunaris:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugResources
 > Task :Lunaris:generateDebugResources FROM-CACHE
 > Task :Lunaris:packageDebugResources FROM-CACHE
-> Task :app:generateDebugResources
 > Task :Lunaris:parseDebugLocalResources FROM-CACHE
 > Task :Lunaris:generateDebugRFile FROM-CACHE
 > Task :Lunaris:javaPreCompileDebug FROM-CACHE
@@ -102,89 +102,89 @@ No explicit dependency on the Checker Framework found, using default version 3.4
 > Task :animatedux:mergeDebugConsumerProguardFiles
 > Task :animatedux:processDebugJavaRes
 > Task :animatedux:mergeDebugJavaResource
-> Task :lunarisrpc:compileDebugJavaWithJavac FROM-CACHE
 > Task :animatedux:bundleLibCompileToJarDebug
-> Task :animatedux:extractDebugAnnotations FROM-CACHE
-> Task :lunarisrpc:bundleLibCompileToJarDebug
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile FROM-CACHE
 > Task :Pixie:preBuild UP-TO-DATE
 > Task :Pixie:preDebugBuild UP-TO-DATE
+> Task :lunarisrpc:compileDebugJavaWithJavac FROM-CACHE
+> Task :animatedux:extractDebugAnnotations FROM-CACHE
 > Task :animatedux:syncDebugLibJars FROM-CACHE
 > Task :animatedux:bundleDebugAar
 > Task :animatedux:assembleDebug
 > Task :Pixie:generateDebugResources FROM-CACHE
 > Task :Pixie:packageDebugResources FROM-CACHE
-> Task :app:parseDebugLocalResources
-> Task :app:generateDebugRFile FROM-CACHE
+> Task :lunarisrpc:bundleLibCompileToJarDebug
 > Task :Pixie:javaPreCompileDebug FROM-CACHE
 > Task :SSC:preBuild UP-TO-DATE
 > Task :SSC:preDebugBuild UP-TO-DATE
 > Task :SSC:generateDebugResources FROM-CACHE
 > Task :SSC:packageDebugResources FROM-CACHE
 > Task :SSC:parseDebugLocalResources FROM-CACHE
-> Task :SSC:generateDebugRFile FROM-CACHE
+> Task :Pixie:dataBindingMergeDependencyArtifactsDebug
 > Task :SSC:javaPreCompileDebug FROM-CACHE
-> Task :SSC:compileDebugJavaWithJavac NO-SOURCE
-> Task :SSC:bundleLibCompileToJarDebug
-> Task :Pixie:parseDebugLocalResources FROM-CACHE
 > Task :TablerIcons:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :TablerIcons:preBuild UP-TO-DATE
 > Task :TablerIcons:preDebugBuild UP-TO-DATE
 > Task :TablerIcons:generateDebugBuildConfig FROM-CACHE
+> Task :Pixie:parseDebugLocalResources FROM-CACHE
+> Task :SSC:generateDebugRFile FROM-CACHE
 > Task :Pixie:generateDebugRFile FROM-CACHE
+> Task :SSC:compileDebugJavaWithJavac NO-SOURCE
+> Task :TablerIcons:generateDebugResources FROM-CACHE
+> Task :SSC:bundleLibCompileToJarDebug
 > Task :TablerIcons:javaPreCompileDebug FROM-CACHE
 > Task :app:javaPreCompileDebug FROM-CACHE
 > Task :app:generateDebugAssets UP-TO-DATE
 > Task :Lunaris:generateDebugAssets UP-TO-DATE
 > Task :Lunaris:mergeDebugAssets
 > Task :lunarisrpc:generateDebugAssets UP-TO-DATE
-> Task :Pixie:dataBindingMergeDependencyArtifactsDebug
-> Task :TablerIcons:generateDebugResources FROM-CACHE
 > Task :lunarisrpc:mergeDebugAssets
 > Task :Pixie:generateDebugAssets UP-TO-DATE
+> Task :Pixie:dataBindingGenBaseClassesDebug FROM-CACHE
 > Task :Pixie:mergeDebugAssets
 > Task :SSC:generateDebugAssets UP-TO-DATE
-> Task :Pixie:dataBindingGenBaseClassesDebug FROM-CACHE
 > Task :SSC:mergeDebugAssets
 > Task :TablerIcons:generateDebugAssets UP-TO-DATE
 > Task :TablerIcons:mergeDebugAssets
+> Task :Pixie:compileDebugJavaWithJavac FROM-CACHE
 > Task :TablerIcons:packageDebugResources FROM-CACHE
 > Task :TablerIcons:parseDebugLocalResources FROM-CACHE
 > Task :TablerIcons:generateDebugRFile FROM-CACHE
-> Task :TablerIcons:compileDebugKotlin FROM-CACHE
-> Task :Pixie:compileDebugJavaWithJavac FROM-CACHE
 > Task :Pixie:bundleLibCompileToJarDebug
 > Task :animatedux:bundleLibRuntimeToJarDebug
+> Task :TablerIcons:compileDebugKotlin FROM-CACHE
 > Task :Pixie:bundleLibRuntimeToJarDebug
 > Task :SSC:bundleLibRuntimeToJarDebug
 > Task :lunarisrpc:bundleLibRuntimeToJarDebug
 > Task :app:desugarDebugFileDependencies FROM-CACHE
 > Task :animatedux:compileDebugLibraryResources FROM-CACHE
 > Task :Lunaris:writeDebugAarMetadata
-> Task :app:mergeDebugAssets
 > Task :lunarisrpc:writeDebugAarMetadata
 > Task :Pixie:writeDebugAarMetadata
 > Task :SSC:writeDebugAarMetadata
 > Task :TablerIcons:writeDebugAarMetadata
 > Task :TablerIcons:compileDebugJavaWithJavac FROM-CACHE
+> Task :app:mergeDebugAssets
 > Task :TablerIcons:bundleLibCompileToJarDebug
 > Task :TablerIcons:bundleLibRuntimeToJarDebug
 > Task :app:checkDebugAarMetadata
-> Task :app:compressDebugAssets FROM-CACHE
+> Task :app:mapDebugSourceSetPaths
 > Task :app:createDebugCompatibleScreenManifests
 > Task :animatedux:extractDeepLinksDebug FROM-CACHE
 > Task :app:extractDeepLinksDebug FROM-CACHE
 > Task :Lunaris:extractDeepLinksDebug FROM-CACHE
-> Task :app:mapDebugSourceSetPaths
-> Task :Lunaris:processDebugManifest FROM-CACHE
+> Task :app:compressDebugAssets FROM-CACHE
 > Task :lunarisrpc:extractDeepLinksDebug FROM-CACHE
-> Task :lunarisrpc:processDebugManifest FROM-CACHE
+> Task :Lunaris:processDebugManifest FROM-CACHE
 > Task :Pixie:extractDeepLinksDebug FROM-CACHE
+> Task :lunarisrpc:processDebugManifest FROM-CACHE
 > Task :SSC:extractDeepLinksDebug FROM-CACHE
 > Task :Pixie:processDebugManifest FROM-CACHE
-> Task :TablerIcons:extractDeepLinksDebug FROM-CACHE
-> Task :TablerIcons:processDebugManifest FROM-CACHE
 > Task :SSC:processDebugManifest FROM-CACHE
+> Task :TablerIcons:extractDeepLinksDebug FROM-CACHE
 > Task :Lunaris:compileDebugLibraryResources FROM-CACHE
+> Task :TablerIcons:processDebugManifest FROM-CACHE
 > Task :lunarisrpc:compileDebugLibraryResources FROM-CACHE
 > Task :Pixie:compileDebugLibraryResources FROM-CACHE
 > Task :SSC:compileDebugLibraryResources FROM-CACHE
@@ -203,21 +203,26 @@ No explicit dependency on the Checker Framework found, using default version 3.4
 > Task :app:checkDebugDuplicateClasses
 > Task :lunarisrpc:bundleLibRuntimeToDirDebug
 > Task :animatedux:copyDebugJniLibsProjectOnly
-> Task :app:mergeExtDexDebug FROM-CACHE
 
 > Task :app:configureCMakeDebug[arm64-v8a]
 Checking the license for package CMake 3.22.1 in /usr/local/lib/android/sdk/licenses
 License for package CMake 3.22.1 accepted.
 Preparing "Install CMake 3.22.1 v.3.22.1".
+
+> Task :app:mergeExtDexDebug FROM-CACHE
+
+> Task :app:configureCMakeDebug[arm64-v8a]
 "Install CMake 3.22.1 v.3.22.1" ready.
 Installing CMake 3.22.1 in /usr/local/lib/android/sdk/cmake/3.22.1
 "Install CMake 3.22.1 v.3.22.1" complete.
 "Install CMake 3.22.1 v.3.22.1" finished.
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityDataTypes.java:62: warning: [dep-ann] deprecated item is not annotated with @Deprecated
 
+> Task :app:configureCMakeDebug[armeabi-v7a]
     public static final EntityDataType<BlockDefinition> CARRY_BLOCK_STATE = new EntityDataType<>(BlockDefinition.class, "CARRY_BLOCK_STATE");
-> Task :Protocol:bedrock-codec:delombok
+
                                                         ^
+> Task :Protocol:bedrock-codec:delombok
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/response/ItemStackResponseContainer.java:19: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     ContainerSlotType container;
                       ^
@@ -235,9 +240,7 @@ Installing CMake 3.22.1 in /usr/local/lib/android/sdk/cmake/3.22.1
     ^
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/action/ItemStackRequestActionType.java:29: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     TAKE_FROM_ITEM_CONTAINER
-
     ^
-> Task :app:configureCMakeDebug[armeabi-v7a]
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     public float rowingTime;
                  ^
@@ -253,8 +256,15 @@ Installing CMake 3.22.1 in /usr/local/lib/android/sdk/cmake/3.22.1
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/InventorySlotPacket.java:26: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     public int dynamicContainerSize;
                ^
+
+> Task :app:mergeDebugResources
+> Task :app:buildCMakeDebug[armeabi-v7a]
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :app:configureCMakeDebug[x86]
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/PlayerAuthInputPacket.java:31: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+
     public Vector3f vrGazeDirection;
+> Task :Protocol:bedrock-codec:delombok
                     ^
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/PlayerInputPacket.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
 public class PlayerInputPacket implements BedrockPacket {
@@ -268,13 +278,8 @@ public class RiderJumpPacket implements BedrockPacket {
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/ResourcePacksInfoPacket.java:29: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     public boolean forcingServerPacksEnabled;
                    ^
-> Task :app:mergeDebugResources
-> Task :app:buildCMakeDebug[arm64-v8a]
-> Task :app:buildCMakeDebug[armeabi-v7a]
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/StartGamePacket.java:101: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-
     public AuthoritativeMovementMode authoritativeMovementMode;
-> Task :Protocol:bedrock-codec:delombok
                                      ^
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/StartGamePacket.java:112: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     public List<ItemDefinition> itemDefinitions = new ObjectArrayList<>();
@@ -282,7 +287,9 @@ public class RiderJumpPacket implements BedrockPacket {
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/BiomeDefinitionListPacket.java:21: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     public NbtMap definitions;
                   ^
+
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/CodeBuilderSourcePacket.java:21: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+> Task :app:configureCMakeDebug[x86_64]
     public String value;
                   ^
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/CameraAimAssistPresetsPacket.java:22: warning: [dep-ann] deprecated item is not annotated with @Deprecated
@@ -339,49 +346,49 @@ public class RiderJumpPacket implements BedrockPacket {
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:27: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     EXIT_LEVEL_LIVING_ROOM
     ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/ItemStackRequestSlotData.java:17: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    ContainerSlotType container;
-                      ^
-
-> Task :app:configureCMakeDebug[x86]
-> Task :app:configureCMakeDebug[x86_64]
-> Task :app:buildCMakeDebug[x86_64]
-> Task :app:mergeDebugJniLibFolders
 > Task :app:buildCMakeDebug[x86]
+> Task :app:mergeDebugJniLibFolders
+> Task :app:buildCMakeDebug[x86_64]
 > Task :Lunaris:configureCMakeDebug[arm64-v8a]
 > Task :Lunaris:configureCMakeDebug[armeabi-v7a]
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/ContainerId.java:52: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/ItemStackRequestSlotData.java:17: warning: [dep-ann] deprecated item is not annotated with @Deprecated
 
-    public static final int CONTAINER_ID_REGISTRY_INVENTORY = 126;
+    ContainerSlotType container;
 > Task :Protocol:bedrock-codec:delombok
+                      ^
+
+> Task :Lunaris:buildCMakeDebug[arm64-v8a]
+> Task :Lunaris:buildCMakeDebug[armeabi-v7a]
+> Task :Lunaris:configureCMakeDebug[x86]
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/ContainerId.java:52: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+> Task :Lunaris:configureCMakeDebug[x86_64]
+    public static final int CONTAINER_ID_REGISTRY_INVENTORY = 126;
                             ^
+
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityDamageCause.java:40: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+> Task :Protocol:bedrock-codec:delombok
     MACE_SMASH;
     ^
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/LevelEvent.java:118: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     PARTICLE_CREAKING_HEART_TRIAL,
     ^
 
-> Task :Lunaris:buildCMakeDebug[armeabi-v7a]
-> Task :Lunaris:buildCMakeDebug[arm64-v8a]
-> Task :Lunaris:configureCMakeDebug[x86]
-> Task :Lunaris:configureCMakeDebug[x86_64]
 > Task :Lunaris:buildCMakeDebug[x86]
 > Task :Lunaris:mergeDebugJniLibFolders
+> Task :Lunaris:buildCMakeDebug[x86_64]
+> Task :app:processDebugResources
+> Task :Lunaris:mergeDebugNativeLibs
+> Task :Lunaris:copyDebugJniLibsProjectOnly
 > Task :lunarisrpc:mergeDebugJniLibFolders
 > Task :lunarisrpc:mergeDebugNativeLibs NO-SOURCE
 > Task :lunarisrpc:copyDebugJniLibsProjectOnly
-> Task :app:processDebugResources
-> Task :Lunaris:buildCMakeDebug[x86_64]
 > Task :Pixie:configureCMakeDebug[arm64-v8a]
-> Task :Lunaris:mergeDebugNativeLibs
-> Task :Lunaris:copyDebugJniLibsProjectOnly
-> Task :Pixie:configureCMakeDebug[armeabi-v7a]
 > Task :Pixie:configureCMakeDebug[x86]
-> Task :Pixie:buildCMakeDebug[arm64-v8a]
+> Task :Pixie:configureCMakeDebug[armeabi-v7a]
 > Task :Pixie:buildCMakeDebug[x86]
-> Task :Pixie:mergeDebugJniLibFolders
 > Task :Pixie:buildCMakeDebug[armeabi-v7a]
+> Task :Pixie:mergeDebugJniLibFolders
+> Task :Pixie:buildCMakeDebug[arm64-v8a]
 > Task :Pixie:configureCMakeDebug[x86_64]
 
 > Task :SSC:configureCMakeDebug[arm64-v8a]
@@ -406,8 +413,8 @@ C/C++:   CMake is pretending there is a "project(Project)" command on the first
 C/C++:   line.
 C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
 
-> Task :SSC:buildCMakeDebug[arm64-v8a]
 > Task :SSC:buildCMakeDebug[armeabi-v7a]
+> Task :SSC:buildCMakeDebug[arm64-v8a]
 
 > Task :SSC:configureCMakeDebug[x86]
 C/C++: CMake Warning (dev) in CMakeLists.txt:
@@ -432,74 +439,74 @@ C/C++:   line.
 C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
 
 > Task :Pixie:buildCMakeDebug[x86_64]
+> Task :SSC:buildCMakeDebug[x86]
 > Task :Pixie:mergeDebugNativeLibs
-> Task :Pixie:copyDebugJniLibsProjectOnly
 > Task :SSC:mergeDebugJniLibFolders
+> Task :Pixie:copyDebugJniLibsProjectOnly
 > Task :TablerIcons:mergeDebugJniLibFolders
 > Task :TablerIcons:mergeDebugNativeLibs NO-SOURCE
-> Task :TablerIcons:copyDebugJniLibsProjectOnly
 > Task :app:validateSigningDebug
 > Task :app:writeDebugAppMetadata
+> Task :TablerIcons:copyDebugJniLibsProjectOnly
 > Task :app:writeDebugSigningConfigVersions
-> Task :SSC:buildCMakeDebug[x86]
 > Task :Lunaris:extractDeepLinksForAarDebug FROM-CACHE
 > Task :Lunaris:prepareDebugArtProfile
 > Task :Lunaris:prepareLintJarForPublish
 > Task :lunarisrpc:stripDebugDebugSymbols NO-SOURCE
 > Task :lunarisrpc:copyDebugJniLibsProjectAndLocalJars
-> Task :Lunaris:stripDebugDebugSymbols
 > Task :lunarisrpc:extractDebugAnnotations FROM-CACHE
 > Task :lunarisrpc:extractDeepLinksForAarDebug FROM-CACHE
-> Task :Lunaris:copyDebugJniLibsProjectAndLocalJars
 > Task :lunarisrpc:mergeDebugGeneratedProguardFiles
-> Task :lunarisrpc:prepareDebugArtProfile
-> Task :lunarisrpc:prepareLintJarForPublish
+> Task :SSC:buildCMakeDebug[x86_64]
 > Task :lunarisrpc:mergeDebugConsumerProguardFiles
+> Task :lunarisrpc:prepareDebugArtProfile
+> Task :Lunaris:stripDebugDebugSymbols
+> Task :lunarisrpc:prepareLintJarForPublish
+> Task :Lunaris:copyDebugJniLibsProjectAndLocalJars
+> Task :SSC:mergeDebugNativeLibs
 > Task :lunarisrpc:mergeDebugJavaResource
 > Task :lunarisrpc:syncDebugLibJars FROM-CACHE
 > Task :lunarisrpc:bundleDebugAar
 > Task :lunarisrpc:assembleDebug
-> Task :Pixie:stripDebugDebugSymbols
 > Task :Pixie:extractDebugAnnotations FROM-CACHE
 > Task :Pixie:extractDeepLinksForAarDebug FROM-CACHE
 > Task :Pixie:mergeDebugGeneratedProguardFiles
 > Task :Pixie:mergeDebugConsumerProguardFiles
+> Task :SSC:copyDebugJniLibsProjectOnly
 > Task :Pixie:prepareDebugArtProfile
-> Task :Pixie:copyDebugJniLibsProjectAndLocalJars
 > Task :Pixie:prepareLintJarForPublish
+> Task :Pixie:stripDebugDebugSymbols
 > Task :Pixie:mergeDebugJavaResource
-> Task :SSC:extractDebugAnnotations FROM-CACHE
-> Task :SSC:extractDeepLinksForAarDebug FROM-CACHE
 > Task :Pixie:syncDebugLibJars FROM-CACHE
+> Task :SSC:stripDebugDebugSymbols
+> Task :SSC:extractDebugAnnotations FROM-CACHE
+> Task :SSC:copyDebugJniLibsProjectAndLocalJars
+> Task :SSC:extractDeepLinksForAarDebug FROM-CACHE
+> Task :Pixie:copyDebugJniLibsProjectAndLocalJars
 > Task :SSC:mergeDebugGeneratedProguardFiles
 > Task :SSC:mergeDebugConsumerProguardFiles
 > Task :SSC:prepareDebugArtProfile
 > Task :SSC:prepareLintJarForPublish
 > Task :SSC:mergeDebugJavaResource
-> Task :SSC:syncDebugLibJars FROM-CACHE
 > Task :TablerIcons:stripDebugDebugSymbols NO-SOURCE
 > Task :TablerIcons:copyDebugJniLibsProjectAndLocalJars
-> Task :SSC:buildCMakeDebug[x86_64]
+> Task :SSC:syncDebugLibJars FROM-CACHE
 > Task :TablerIcons:extractDebugAnnotations FROM-CACHE
 > Task :TablerIcons:extractDeepLinksForAarDebug FROM-CACHE
 > Task :TablerIcons:mergeDebugGeneratedProguardFiles
 > Task :TablerIcons:mergeDebugConsumerProguardFiles
-> Task :SSC:mergeDebugNativeLibs
 > Task :TablerIcons:prepareDebugArtProfile
-> Task :SSC:copyDebugJniLibsProjectOnly
 > Task :TablerIcons:prepareLintJarForPublish
 > Task :TablerIcons:mergeDebugJavaResource
-> Task :SSC:stripDebugDebugSymbols
 > Task :TablerIcons:syncDebugLibJars FROM-CACHE
-> Task :SSC:copyDebugJniLibsProjectAndLocalJars
 > Task :SSC:bundleDebugAar
 > Task :SSC:assembleDebug
 > Task :Pixie:bundleDebugAar
 > Task :Pixie:assembleDebug
 > Task :TablerIcons:bundleDebugAar
 > Task :TablerIcons:assembleDebug
-
 warning: The following options were not recognized by any processor: '[suppressWarnings]'
+
 > Task :Protocol:bedrock-codec:compileJava
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/entity/EntityDataTypes.java:57: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     public static final EntityDataType<BlockDefinition> CARRY_BLOCK_STATE = new EntityDataType<>(BlockDefinition.class, "CARRY_BLOCK_STATE");
@@ -647,8 +654,8 @@ Note: Recompile with -Xlint:unchecked for details.
 
 > Task :Protocol:bedrock-codec:classes
 > Task :Protocol:bedrock-codec:jar
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/netty/codec/compression/SnappyCompression.java:13: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
 
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/netty/codec/compression/SnappyCompression.java:13: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
 import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
 > Task :Protocol:bedrock-connection:delombok
                       ^
@@ -668,53 +675,46 @@ import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
         public final UUID identity;
                           ^
 warning: The following options were not recognized by any processor: '[suppressWarnings]'
-
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/util/ChainValidationResult.java:123: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-> Task :Protocol:bedrock-connection:compileJava
         public final UUID identity;
                           ^
 Note: /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/util/EncryptionUtils.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 2 warnings
 
+> Task :Protocol:bedrock-connection:compileJava
+
 > Task :Protocol:bedrock-connection:classes
 > Task :Protocol:bedrock-connection:jar
 > Task :app:mergeDebugNativeLibs
 > Task :app:stripDebugDebugSymbols
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:14:45 Type argument is not within its bounds: should be subtype of 'com.project.zephyr.relay.definition.Definition'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/SimpleDefinitionRegistry.kt:40:42 Unresolved reference 'identifier'.
 
-> Task :Lunaris:compileDebugKotlin FAILED
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:14:96 Type argument is not within its bounds: should be subtype of 'com.project.zephyr.relay.definition.Definition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:17:46 Type argument is not within its bounds: should be subtype of 'com.project.zephyr.relay.definition.Definition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:18:42 Type argument is not within its bounds: should be subtype of 'com.project.zephyr.relay.definition.Definition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:24:52 Type argument is not within its bounds: should be subtype of 'com.project.zephyr.relay.definition.Definition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:25:42 Type argument is not within its bounds: should be subtype of 'com.project.zephyr.relay.definition.Definition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:9:1 Class 'NbtBlockDefinitionRegistry' is not abstract and does not implement abstract member 'getDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:12:24 Type argument is not within its bounds: should be subtype of 'com.project.zephyr.relay.definition.Definition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:28:5 'isRegistered' overrides nothing. Potential signatures for overriding:
-fun isRegistered(definition: BlockDefinition): Boolean
 e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:85:35 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition!>!' was expected.
+> Task :Lunaris:compileDebugKotlin FAILED
 e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:86:36 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition!>!' was expected.
 e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:87:43 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<com.project.zephyr.relay.definition.NamedDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.common.NamedDefinition!>!' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:18:43 Unresolved reference 'SimpleDefinitionRegistry'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:20:18 Unresolved reference 'build'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:22:76 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition!>!' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:23:74 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition!>!' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:26:81 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition!>!' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:27:79 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition!>!' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:29:81 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition!>!' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:30:79 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition!>!' was expected.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:35:17 Unresolved reference 'SimpleDefinitionRegistry'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:35:50 Unresolved reference 'NamedDefinition'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:39:22 Unresolved reference 'build'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:24:76 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition!>!' was expected.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:25:74 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition!>!' was expected.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:28:81 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition!>!' was expected.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:29:79 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition!>!' was expected.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:31:81 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition!>!' was expected.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:32:79 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition!>!' was expected.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:43:84 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.SimpleDefinitionRegistry<com.project.zephyr.relay.definition.NamedDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.common.NamedDefinition!>!' was expected.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:44:82 Assignment type mismatch: actual type is 'com.project.zephyr.relay.definition.SimpleDefinitionRegistry<com.project.zephyr.relay.definition.NamedDefinition>', but 'org.cloudburstmc.protocol.common.DefinitionRegistry<org.cloudburstmc.protocol.common.NamedDefinition!>!' was expected.
 
 
 [Incubating] Problems report is available at: file:///home/runner/work/ZephyrMC/ZephyrMC/build/reports/problems/problems-report.html
 FAILURE: Build failed with an exception.
 
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+
 * What went wrong:
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 Execution failed for task ':Lunaris:compileDebugKotlin'.
 > A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+
    > Compilation error. See log for more details
 
 * Try:
@@ -723,15 +723,7 @@ Execution failed for task ':Lunaris:compileDebugKotlin'.
 > Get more help at https://help.gradle.org.
 
 * Exception is:
-
-Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
-
-You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
-
 org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':Lunaris:compileDebugKotlin'.
-For more on this, please refer to https://docs.gradle.org/8.12.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
-232 actionable tasks: 144 executed, 88 from cache
-Configuration cache entry stored.
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
 	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
@@ -927,5 +919,8 @@ Caused by: org.jetbrains.kotlin.gradle.tasks.CompilationErrorException: Compilat
 	... 2 more
 
 
-BUILD FAILED in 1m 46s
+BUILD FAILED in 1m 42s
+For more on this, please refer to https://docs.gradle.org/8.12.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+232 actionable tasks: 144 executed, 88 from cache
+Configuration cache entry stored.
 Error: Process completed with exit code 1.

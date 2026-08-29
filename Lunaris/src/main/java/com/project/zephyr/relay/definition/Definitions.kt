@@ -5,6 +5,7 @@ import org.cloudburstmc.nbt.NbtType
 import org.cloudburstmc.nbt.NbtUtils
 import org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition
 import org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition
+import org.cloudburstmc.protocol.common.DefinitionRegistry
 import java.io.InputStream
 
 

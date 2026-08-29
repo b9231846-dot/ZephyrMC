@@ -1,5 +1,7 @@
 package com.project.zephyr.relay.definition
 
-interface NamedDefinition : Definition {
-    fun getIdentifier(): String
+import org.cloudburstmc.protocol.common.NamedDefinition as CloudburstNamedDefinition
+
+interface NamedDefinition : CloudburstNamedDefinition {
+    override fun getIdentifier(): String
 }

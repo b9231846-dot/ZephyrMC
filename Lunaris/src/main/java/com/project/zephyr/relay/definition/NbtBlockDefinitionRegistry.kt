@@ -4,12 +4,13 @@ import com.project.zephyr.relay.util.BlockPaletteUtils
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap
 import org.cloudburstmc.nbt.NbtMap
 import org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition
+import org.cloudburstmc.protocol.common.DefinitionRegistry as CloudburstDefinitionRegistry
 
 
 class NbtBlockDefinitionRegistry(
     definitions: List<NbtMap>,
     hashed: Boolean
-) : DefinitionRegistry<BlockDefinition> {
+) : CloudburstDefinitionRegistry<BlockDefinition> {
 
     private val definitions = Int2ObjectOpenHashMap<NbtBlockDefinition>()
 
@@ -23,10 +24,6 @@ class NbtBlockDefinitionRegistry(
 
     override fun getDefinition(runtimeId: Int): BlockDefinition? {
         return definitions.get(runtimeId)
-    }
-
-    override fun getDefinition(identifier: String): BlockDefinition? {
-        return definitions.values.find { it.identifier == identifier }
     }
 
     override fun isRegistered(definition: BlockDefinition): Boolean {
