@@ -464,6 +464,7 @@ class KitsuGUI : OverlayWindow() {
             when (selectedCheatCategory) {
                 CheatCategory.Config -> ConfigCategoryContent()
                 CheatCategory.Home -> HomeCategoryUi()
+                CheatCategory.Logs -> LogcatCategoryUi()
                 CheatCategory.Chat -> ChatCategoryContent()
                 else -> ModuleContent(
                     selectedCheatCategory,
@@ -547,6 +548,7 @@ class KitsuGUI : OverlayWindow() {
             CheatCategory.Misc -> "Misc"
             CheatCategory.Config -> "Config"
             CheatCategory.Home -> "Home"
+            CheatCategory.Logs -> "Logs"
             CheatCategory.Chat -> "Chat"
             else -> "Modules"
         }

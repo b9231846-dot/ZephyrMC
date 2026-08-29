@@ -39,5 +39,9 @@ enum class CheatCategory(
     Config(
         iconResId = R.drawable.ic_cloud_upload_black_24dp,
         labelResId = R.string.config
+    ),
+    Logs(
+        iconResId = ir.alirezaivaz.tablericons.R.drawable.ic_terminal,
+        labelResId = R.string.logs
     )
 }

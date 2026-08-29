@@ -17,7 +17,7 @@ import org.cloudburstmc.protocol.bedrock.BedrockPeer
 import org.cloudburstmc.protocol.bedrock.BedrockPong
 import org.cloudburstmc.protocol.bedrock.PacketDirection
 import org.cloudburstmc.protocol.bedrock.codec.BedrockCodec
-import org.cloudburstmc.protocol.bedrock.codec.v2168.Bedrock_v2168
+import org.cloudburstmc.protocol.bedrock.codec.v898.Bedrock_v898
 import org.cloudburstmc.protocol.bedrock.netty.initializer.BedrockChannelInitializer
 import kotlin.random.Random
 
@@ -27,7 +27,7 @@ class ZephyrRelay(
 ) {
 
     companion object {
-        val DefaultCodec: BedrockCodec = Bedrock_v2168.CODEC
+        val DefaultCodec: BedrockCodec = Bedrock_v898.CODEC
 
         
         init {

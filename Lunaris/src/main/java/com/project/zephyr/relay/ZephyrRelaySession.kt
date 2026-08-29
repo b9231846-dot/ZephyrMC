@@ -16,6 +16,8 @@ class ZephyrRelaySession(peer: BedrockPeer, subClientId: Int, val zephyrRelay: Z
     val listeners: MutableList<ZephyrRelayPacketListener> = ArrayList()
     private val packetQueue: Queue<Pair<BedrockPacket, Boolean>> = PlatformDependent.newMpscQueue()
 
+    var logger: ZephyrLogger = SystemLogger()
+
     var client: ClientSession? = null
         internal set(value) {
             value?.apply {

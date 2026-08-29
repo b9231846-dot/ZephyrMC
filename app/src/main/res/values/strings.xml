@@ -150,6 +150,7 @@
     <string name="module_anti_crystal_display_name">AntiCrystal</string>
     <string name="module_autototem_display_name">AutoTotem</string>
     <string name="module_autoarmor_display_name">AutoArmor</string>
+    <string name="logs">Logs</string>
     <string name="module_logcat_display_name">Logcat</string>
     <string name="module_weather_controller_display_name">Weather Controller</string>
     <string name="module_killaura_display_name">KillAura</string>
