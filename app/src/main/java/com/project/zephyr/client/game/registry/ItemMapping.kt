@@ -2,8 +2,8 @@ package com.project.zephyr.client.game.registry
 
 import android.content.Context
 import com.google.gson.JsonParser
-import com.project.zephyr.relay.definition.DefinitionRegistry
 import org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition
+import org.cloudburstmc.protocol.common.DefinitionRegistry
 import java.io.InputStream
 
 class ItemMapping(private val runtimeToItem: Map<Int, ItemDefinition>) : DefinitionRegistry<ItemDefinition> {

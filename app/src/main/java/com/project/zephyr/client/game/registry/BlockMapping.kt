@@ -4,7 +4,7 @@ import android.content.Context
 import org.cloudburstmc.nbt.NBTInputStream
 import org.cloudburstmc.nbt.NbtList
 import org.cloudburstmc.nbt.NbtMap
-import com.project.zephyr.relay.definition.DefinitionRegistry
+import org.cloudburstmc.protocol.common.DefinitionRegistry
 import java.io.DataInputStream
 import java.util.zip.GZIPInputStream
 
@@ -19,7 +19,7 @@ class BlockMapping(
         runtimeToGameMap.forEach { (k, v) -> gameToRuntimeMap[v] = k }
     }
 
-    override fun getDefinition(runtimeId: Int): BlockDefinition {
+    override fun getDefinition(runtimeId: Int): org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition {
         return runtimeToGameMap[runtimeId] ?: UnknownBlockDefinition(runtimeId)
     }
 
