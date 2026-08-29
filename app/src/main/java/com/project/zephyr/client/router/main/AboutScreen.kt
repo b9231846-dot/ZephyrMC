@@ -276,24 +276,6 @@ fun AboutScreen() {
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         SocialMediaIcon(
-                            icon = painterResource(id = R.drawable.ic_github),
-                            label = "GitHub",
-                            onClick = {
-                                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/TheProjectLumina/ZephyrClient"))
-                                context.startActivity(intent)
-                            }
-                        )
-
-                        SocialMediaIcon(
-                            icon = painterResource(id = R.drawable.ic_discord),
-                            label = "Discord",
-                            onClick = {
-                                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://discord.com/invite/6kz3dcndrN"))
-                                context.startActivity(intent)
-                            }
-                        )
-
-                        SocialMediaIcon(
                             icon = Icons.Filled.Public,
                             label = "Website",
                             onClick = {

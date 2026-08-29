@@ -1,171 +1,171 @@
 {
   "main": {
-    "primary": "#FFBB86FC",
-    "background": "#FF0D0D0D",
-    "surface": "#FF1A1A1A",
-    "onBackground": "#FFE1BEE7",
+    "primary": "#FF9B59F5",
+    "background": "#FF0A0A0F",
+    "surface": "#FF151520",
+    "onBackground": "#FFE8E0F5",
     "onSurface": "#FFFFFFFF",
-    "backgroundOverlayUi": "#E60D0D0D",
-    "backgroundOverlayUi2": "#F21A1A1A",
-    "notBackgroundOverlayUi": "#FFD5D5D5",
+    "backgroundOverlayUi": "#E60A0A0F",
+    "backgroundOverlayUi2": "#F2151520",
+    "notBackgroundOverlayUi": "#FFD0B8F5",
     "textModules": "#FFFFFFFF"
   },
   "launchActivity": {
-    "launcherRadial": "#FF9D00FF",
-    "lAnimation": "#FFBB86FC",
+    "launcherRadial": "#FF8B5CF6",
+    "lAnimation": "#FF9B59F5",
     "lText": "#FFFFFFFF",
-    "lBlob1": "#299D00FF",
-    "lBlob2": "#1FBB86FC",
-    "lBg1": "#FF0D0D0D",
-    "lBg2": "#FF1A1A1A"
+    "lBlob1": "#FF7C3AED",
+    "lBlob2": "#FF8B5CF6",
+    "lBg1": "#FF0A0A0F",
+    "lBg2": "#FF151520"
   },
   "miniMap": {
     "mBg": "#CC000000",
-    "mGrid": "#669D00FF",
-    "mCrosshair": "#80BB86FC",
+    "mGrid": "#668B5CF6",
+    "mCrosshair": "#809B59F5",
     "mPlayerMarker": "#FFFFFFFF",
-    "mNorth": "#FFFF4081",
-    "mEntityClose": "#FFFF5252",
-    "mEntityFar": "#FFFFEB3B"
+    "mNorth": "#FFA78BFA",
+    "mEntityClose": "#FFFF6B6B",
+    "mEntityFar": "#FFFFD93D"
   },
   "arrayList": {
-    "oArrayList1": "#FF9D00FF",
-    "oArrayList2": "#CC9D00FF",
-    "oArrayBase": "#FF9D00FF"
+    "oArrayList1": "#FF8B5CF6",
+    "oArrayList2": "#CC8B5CF6",
+    "oArrayBase": "#FF8B5CF6"
   },
   "overlayNotification": {
-    "oNotifAccent": "#FFBB86FC",
-    "oNotifBase": "#FF1A1A1A",
+    "oNotifAccent": "#FF9B59F5",
+    "oNotifBase": "#FF151520",
     "oNotifText": "#FFFFFFFF",
-    "oNotifProgressbar": "#FF9D00FF"
+    "oNotifProgressbar": "#FF8B5CF6"
   },
   "packetNotification": {
-    "pColorGradient1": "#FF9D00FF",
-    "pColorGradient2": "#FFFF4081",
-    "pBackground": "#E90D0D0D"
+    "pColorGradient1": "#FF8B5CF6",
+    "pColorGradient2": "#FFA78BFA",
+    "pBackground": "#E90A0A0F"
   },
   "sessionStats": {
-    "sBase": "#FF9D00FF",
-    "sAccent": "#FFFF4081",
-    "sBackgroundGradient1": "#FF0D0D0D",
-    "sBackgroundGradient2": "#F20D0D0D"
+    "sBase": "#FF8B5CF6",
+    "sAccent": "#FFA78BFA",
+    "sBackgroundGradient1": "#FF0A0A0F",
+    "sBackgroundGradient2": "#F20A0A0F"
   },
   "speedoMeter": {
-    "sMiniLineGraph": "#FF1A1A1A",
-    "sMeterBg": "#FF0D0D0D",
-    "sMeterAccent": "#FFFF4081",
-    "sMeterBase": "#FF9D00FF"
+    "sMiniLineGraph": "#FF151520",
+    "sMeterBg": "#FF0A0A0F",
+    "sMeterAccent": "#FFA78BFA",
+    "sMeterBase": "#FF8B5CF6"
   },
   "topCenterOverlay": {
-    "tcoGradient1": "#FFFFE4F2",
-    "tcoGradient2": "#FFFF4081",
-    "tcoBackground": "#FF0D0D0D"
+    "tcoGradient1": "#FFE8E0F5",
+    "tcoGradient2": "#FFA78BFA",
+    "tcoBackground": "#FF0A0A0F"
   },
   "graceUi": {
     "elevatedCard": {
-      "eColorCard1": "#FF1A1A1A",
-      "eColorCard2": "#FF9D00FF",
-      "eColorCard3": "#FFFF4081",
-      "mColorCard1": "#FFBB86FC",
-      "mColorCard2": "#FFFF4081",
-      "mColorCard3": "#FF1A1A1A"
+      "eColorCard1": "#FF151520",
+      "eColorCard2": "#FF8B5CF6",
+      "eColorCard3": "#FFA78BFA",
+      "mColorCard1": "#FF9B59F5",
+      "mColorCard2": "#FFA78BFA",
+      "mColorCard3": "#FF151520"
     },
     "moduleSettingScreen": {
-      "mColorScreen1": "#FF0D0D0D",
-      "mColorScreen2": "#FFE1BEE7"
+      "mColorScreen1": "#FF0A0A0F",
+      "mColorScreen2": "#FFE8E0F5"
     },
     "navigationRailItem": {
-      "nColorItem1": "#FF1A1A1A",
-      "nColorItem2": "#FFBB86FC",
-      "nColorItem3": "#FFE1BEE7",
-      "nColorItem4": "#FF9D00FF",
-      "nColorItem5": "#FFFF4081",
-      "nColorItem6": "#FFFF6B9D",
-      "nColorItem7": "#000D0D0D"
+      "nColorItem1": "#FF151520",
+      "nColorItem2": "#FF9B59F5",
+      "nColorItem3": "#FFE8E0F5",
+      "nColorItem4": "#FF8B5CF6",
+      "nColorItem5": "#FFA78BFA",
+      "nColorItem6": "#FFC4B5FA",
+      "nColorItem7": "#000A0A0F"
     },
     "packItem": {
-      "pColorItem1": "#FFBB86FC"
+      "pColorItem1": "#FF9B59F5"
     }
   },
   "material": {
     "dark": {
-      "primary": "#FFBB86FC",
-      "onPrimary": "#FF0D0D0D",
-      "primaryContainer": "#FF9D00FF",
+      "primary": "#FF9B59F5",
+      "onPrimary": "#FF0A0A0F",
+      "primaryContainer": "#FF8B5CF6",
       "onPrimaryContainer": "#FFFFFFFF",
-      "secondary": "#FFFF4081",
-      "onSecondary": "#FF0D0D0D",
-      "secondaryContainer": "#FF7B1FA2",
+      "secondary": "#FFA78BFA",
+      "onSecondary": "#FF0A0A0F",
+      "secondaryContainer": "#FF6D28D9",
       "onSecondaryContainer": "#FFFFFFFF",
-      "tertiary": "#FFFF6B9D",
-      "onTertiary": "#FF0D0D0D",
-      "tertiaryContainer": "#FFC2185B",
+      "tertiary": "#FFC4B5FA",
+      "onTertiary": "#FF0A0A0F",
+      "tertiaryContainer": "#FF7C3AED",
       "onTertiaryContainer": "#FFFFFFFF",
-      "error": "#FFFF5252",
-      "onError": "#FF0D0D0D",
-      "errorContainer": "#FFB71C1C",
+      "error": "#FFFF6B6B",
+      "onError": "#FF0A0A0F",
+      "errorContainer": "#FFB91C1C",
       "onErrorContainer": "#FFFFFFFF",
-      "background": "#FF0D0D0D",
-      "onBackground": "#FFE1BEE7",
-      "surface": "#FF1A1A1A",
-      "onSurface": "#FFE1BEE7",
-      "surfaceVariant": "#FF2D1F3D",
-      "onSurfaceVariant": "#FFBB86FC",
-      "outline": "#FF9D00FF",
-      "outlineVariant": "#FF2D1F3D",
+      "background": "#FF0A0A0F",
+      "onBackground": "#FFE8E0F5",
+      "surface": "#FF151520",
+      "onSurface": "#FFE8E0F5",
+      "surfaceVariant": "#FF1E1A2E",
+      "onSurfaceVariant": "#FF9B59F5",
+      "outline": "#FF8B5CF6",
+      "outlineVariant": "#FF1E1A2E",
       "scrim": "#FF000000",
-      "inverseSurface": "#FFE1BEE7",
-      "inverseOnSurface": "#FF0D0D0D",
-      "inversePrimary": "#FF7B1FA2",
-      "surfaceDim": "#FF0D0D0D",
-      "surfaceBright": "#FF2D1F3D",
-      "surfaceContainerLowest": "#FF000000",
-      "surfaceContainerLow": "#FF0D0D0D",
-      "surfaceContainer": "#FF1A1A1A",
-      "surfaceContainerHigh": "#FF2D1F3D",
-      "surfaceContainerHighest": "#FF3D2F5D"
+      "inverseSurface": "#FFE8E0F5",
+      "inverseOnSurface": "#FF0A0A0F",
+      "inversePrimary": "#FF7C3AED",
+      "surfaceDim": "#FF0A0A0F",
+      "surfaceBright": "#FF1E1A2E",
+      "surfaceContainerLowest": "#FF050508",
+      "surfaceContainerLow": "#FF0A0A0F",
+      "surfaceContainer": "#FF151520",
+      "surfaceContainerHigh": "#FF1E1A2E",
+      "surfaceContainerHighest": "#FF2D2450"
     }
   },
   "clickGui": {
     "interfaceElement": {
-      "enabledBackground": "#FF9D00FF",
-      "disabledBackground": "#1A1A1A",
-      "enabledGlow": "#1A9D00FF",
+      "enabledBackground": "#FF8B5CF6",
+      "disabledBackground": "#151520",
+      "enabledGlow": "#1A8B5CF6",
       "enabledText": "#FFFFFFFF",
-      "disabledText": "#FF9D00FF",
+      "disabledText": "#FF8B5CF6",
       "enabledIcon": "#FFFFFFFF",
-      "disabledIcon": "#FF9D00FF",
-      "progressIndicator": "#FFBB86FC",
-      "sliderTrack": "#FF2D1F3D",
-      "sliderActiveTrack": "#FF9D00FF",
-      "sliderThumb": "#FFFF4081",
-      "checkboxUnchecked": "#FF2D1F3D",
-      "checkboxChecked": "#FF9D00FF",
+      "disabledIcon": "#FF8B5CF6",
+      "progressIndicator": "#FF9B59F5",
+      "sliderTrack": "#FF1E1A2E",
+      "sliderActiveTrack": "#FF8B5CF6",
+      "sliderThumb": "#FFA78BFA",
+      "checkboxUnchecked": "#FF1E1A2E",
+      "checkboxChecked": "#FF8B5CF6",
       "checkboxCheckmark": "#FFFFFFFF",
-      "choiceSelected": "#CC9D00FF",
-      "choiceUnselected": "#1A1A1A"
+      "choiceSelected": "#CC8B5CF6",
+      "choiceUnselected": "#151520"
     }
   },
-    "kitsu": {
+  "kitsu": {
     "interfaceElement": {
-      "kitsuPrimary": "#FF9D00FF",
-      "kitsuSecondary": "#FFFF4081",
-      "kitsuSurface": "#FF0D0D0D",
-      "kitsuSurfaceVariant": "#FF1A1A1A",
-      "kitsuOnSurface": "#FFE1BEE7",
-      "kitsuOnSurfaceVariant": "#FFBB86FC",
+      "kitsuPrimary": "#FF8B5CF6",
+      "kitsuSecondary": "#FFA78BFA",
+      "kitsuSurface": "#FF0A0A0F",
+      "kitsuSurfaceVariant": "#FF151520",
+      "kitsuOnSurface": "#FFE8E0F5",
+      "kitsuOnSurfaceVariant": "#FF9B59F5",
       "kitsuBackground": "#FF000000",
-      "kitsuSelected": "#FF9D00FF",
-      "kitsuUnselected": "#FF7B1FA2",
-      "kitsuHover": "#FF2D1F3D"
+      "kitsuSelected": "#FF8B5CF6",
+      "kitsuUnselected": "#FF6D28D9",
+      "kitsuHover": "#FF1E1A2E"
     }
   },
   "keystrokes": {
-       "interfaceElement": {
-      "baseColor": "#1A1A1A",
-      "borderColor": "#9D00FF",
-      "pressedColor": "#FF4081",
-      "textColor": "#FFE1BEE7"
+    "interfaceElement": {
+      "baseColor": "#151520",
+      "borderColor": "#8B5CF6",
+      "pressedColor": "#A78BFA",
+      "textColor": "#FFE8E0F5"
     }
   }
 }

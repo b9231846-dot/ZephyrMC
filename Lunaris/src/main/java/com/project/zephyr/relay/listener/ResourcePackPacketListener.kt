@@ -24,7 +24,7 @@ class ResourcePackPacketListener(
     override fun beforeClientBound(packet: BedrockPacket): Boolean {
         return when (packet) {
             is ResourcePacksInfoPacket -> {
-                logger.i(TAG, "ResourcePacksInfoPacket: ${packet.resourcePackInfos.size} packs, ${packet.gameFTXFiles.size} ftx")
+                logger.i(TAG, "ResourcePacksInfoPacket: ${packet.resourcePackInfos.size} packs")
                 false
             }
             is ResourcePackDataInfoPacket -> {
@@ -32,7 +32,7 @@ class ResourcePackPacketListener(
                 false
             }
             is ResourcePackChunkDataPacket -> {
-                logger.i(TAG, "ResourcePackChunkData: ${packet.chunkIndex}/${packet.chunkCount}")
+                logger.i(TAG, "ResourcePackChunkData: chunkIndex=${packet.chunkIndex}")
                 false
             }
             is ResourcePackStackPacket -> {
@@ -50,7 +50,7 @@ class ResourcePackPacketListener(
                 false
             }
             is ResourcePackClientResponsePacket -> {
-                logger.i(TAG, "Client response: ${packet.responseStatus}")
+                logger.i(TAG, "Client response: ${packet.status}")
                 false
             }
             else -> false

@@ -68,7 +68,6 @@ import androidx.compose.ui.window.Dialog
 import androidx.core.net.toUri
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.project.zephyr.client.R
-import com.project.zephyr.client.discord.AppSection
 import com.project.zephyr.client.discord.PresenceStateManager
 import com.project.zephyr.client.overlay.mods.NotificationType
 import com.project.zephyr.client.overlay.mods.SimpleOverlayNotification
@@ -87,7 +86,7 @@ fun HomePageContent() {
         val coroutineScope = rememberCoroutineScope()
         val snackbarHostState = LocalSnackbarHostState.current
         val mainScreenViewModel: MainScreenViewModel = viewModel()
-        val pages = listOf(R.string.home, R.string.about, R.string.discord, R.string.realms, R.string.settings)
+        val pages = listOf(R.string.home, R.string.about, R.string.realms, R.string.settings)
         var currentPage by rememberSaveable { mutableStateOf(R.string.home) }
 
 
@@ -169,7 +168,6 @@ fun HomePageContent() {
                 R.string.home -> AppSection.HOME
                 R.string.settings -> AppSection.SETTINGS
                 R.string.realms -> AppSection.REALMS
-                R.string.discord -> AppSection.DISCORD
                 R.string.about -> AppSection.ABOUT
                 else -> AppSection.HOME
             }
@@ -397,18 +395,16 @@ fun HomePageContent() {
                             val initialIndex = when(initialState) {
                                 R.string.home -> 0
                                 R.string.about -> 1
-                                R.string.discord -> 2
-                                R.string.realms -> 3
-                                R.string.settings -> 4
+                                R.string.realms -> 2
+                                R.string.settings -> 3
                                 else -> 0
                             }
 
                             val targetIndex = when(targetState) {
                                 R.string.home -> 0
                                 R.string.about -> 1
-                                R.string.discord -> 2
-                                R.string.realms -> 3
-                                R.string.settings -> 4
+                                R.string.realms -> 2
+                                R.string.settings -> 3
                                 else -> 0
                             }
 
@@ -472,7 +468,6 @@ fun HomePageContent() {
                                 onPostPermissionResult(true)
                             })
                             R.string.about -> AboutScreen()
-                            R.string.discord -> DiscordScreen()
                             R.string.realms -> RealmsScreen()
                             R.string.settings -> SettingsScreen()
                             else -> {}

@@ -37,7 +37,7 @@ import com.project.zephyr.relay.listener.XboxLoginPacketListener
 import com.project.zephyr.relay.util.XboxIdentityTokenCacheFileSystem
 import com.project.zephyr.relay.util.captureZephyrRelay
 import android.app.ActivityManager
-import com.project.zephyr.client.overlay.kitsugui.AndroidLogger
+
 import com.project.zephyr.client.remlink.TerminalViewModel
 import com.project.zephyr.client.discord.PresenceStateManager
 import java.io.File
@@ -143,7 +143,6 @@ class Services : Service() {
                             captureModeModel.serverPort
                         )
                     ) {
-                        logger = AndroidLogger()
                         initModules(this)
 
                         listeners.add(AutoCodecPacketListener(this))

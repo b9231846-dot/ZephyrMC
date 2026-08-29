@@ -52,7 +52,7 @@
         <activity
             android:name=".activity.MinecraftCheckActivity"
             android:exported="false"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.RemoteLinkActivity"
             android:exported="false" />
@@ -60,7 +60,7 @@
             android:name=".activity.LaunchActivity"
             android:exported="true"
             android:launchMode="singleTask"
-            android:screenOrientation="sensorLandscape">
+            android:screenOrientation="portrait">
 
 
             <intent-filter>
@@ -84,11 +84,11 @@
         <activity
             android:name=".activity.VersionCheckerActivity"
             android:exported="false"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.MainActivity"
             android:exported="true"
-            android:screenOrientation="landscape">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.OPEN_DOCUMENT" />
 

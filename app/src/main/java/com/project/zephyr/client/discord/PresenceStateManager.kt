@@ -10,7 +10,6 @@ enum class AppSection(val displayName: String) {
     HOME("Home"),
     SETTINGS("Settings"),
     REALMS("Realms"),
-    DISCORD("Discord"),
     ABOUT("About")
 }
 
