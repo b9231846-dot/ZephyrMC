@@ -4,7 +4,7 @@ import android.content.Context
 import org.cloudburstmc.nbt.NBTInputStream
 import org.cloudburstmc.nbt.NbtList
 import org.cloudburstmc.nbt.NbtMap
-import org.cloudburstmc.protocol.common.DefinitionRegistry
+import com.project.zephyr.relay.definition.DefinitionRegistry
 import java.io.DataInputStream
 import java.util.zip.GZIPInputStream
 

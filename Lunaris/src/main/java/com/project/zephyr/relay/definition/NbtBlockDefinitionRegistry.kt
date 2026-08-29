@@ -4,7 +4,6 @@ import com.project.zephyr.relay.util.BlockPaletteUtils
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap
 import org.cloudburstmc.nbt.NbtMap
 import org.cloudburstmc.protocol.bedrock.data.definitions.BlockDefinition
-import org.cloudburstmc.protocol.common.DefinitionRegistry
 
 
 class NbtBlockDefinitionRegistry(

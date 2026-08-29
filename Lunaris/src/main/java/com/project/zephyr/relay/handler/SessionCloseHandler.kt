@@ -1,6 +1,5 @@
 package com.project.zephyr.relay.handler
 
-import net.kyori.adventure.text.Component
 import org.cloudburstmc.protocol.bedrock.packet.BedrockPacketHandler
 
 class SessionCloseHandler(private val onSessionClose: (String) -> Unit) : BedrockPacketHandler {

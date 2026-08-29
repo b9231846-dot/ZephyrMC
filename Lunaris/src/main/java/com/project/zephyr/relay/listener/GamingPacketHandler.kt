@@ -7,8 +7,6 @@ import org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition
 import org.cloudburstmc.protocol.bedrock.packet.BedrockPacket
 import org.cloudburstmc.protocol.bedrock.packet.CameraPresetsPacket
 import org.cloudburstmc.protocol.bedrock.packet.StartGamePacket
-import org.cloudburstmc.protocol.common.NamedDefinition
-import org.cloudburstmc.protocol.common.SimpleDefinitionRegistry
 
 @Suppress("MemberVisibilityCanBePrivate")
 class GamingPacketHandler(

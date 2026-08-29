@@ -1,7 +1,6 @@
 package com.project.zephyr.relay.definition
 
 import org.cloudburstmc.protocol.bedrock.data.camera.CameraPreset
-import org.cloudburstmc.protocol.common.NamedDefinition
 
 
 data class CameraPresetDefinition(

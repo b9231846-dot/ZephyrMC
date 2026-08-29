@@ -33,6 +33,10 @@ dependencyResolutionManagement {
 
 rootProject.name = "Zephyr v4"
 include(":app",
+    ":Protocol:bedrock-codec",
+    ":Protocol:bedrock-connection",
+    ":Protocol:common",
+    ":Protocol:adventure",
     ":Network:codec-query",
     ":Network:codec-rcon",
     ":Network:transport-raknet",

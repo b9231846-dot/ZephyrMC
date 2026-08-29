@@ -30,114 +30,78 @@ Installing NDK (Side by side) 27.0.12077973 in /usr/local/lib/android/sdk/ndk/27
 > Configure project :TablerIcons
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/TablerIcons/build.gradle.kts:85:45: 'capitalize(): String' is deprecated. Use replaceFirstChar instead.
 
-> Configure project :Protocol:adventure
-No explicit dependency on the Checker Framework found, using default version 3.49.0
-
-> Configure project :Protocol:bedrock-codec
-No explicit dependency on the Checker Framework found, using default version 3.49.0
-
-> Configure project :Protocol:bedrock-connection
-No explicit dependency on the Checker Framework found, using default version 3.49.0
-
-> Configure project :Protocol:common
-No explicit dependency on the Checker Framework found, using default version 3.49.0
-
 > Task :animatedux:generateDebugAssets UP-TO-DATE
-> Task :animatedux:preBuild UP-TO-DATE
 > Task :animatedux:checkKotlinGradlePluginConfigurationErrors SKIPPED
-> Task :app:preBuild UP-TO-DATE
+> Task :animatedux:preBuild UP-TO-DATE
 > Task :animatedux:preDebugBuild UP-TO-DATE
-> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
 > Task :animatedux:generateDebugResources
-> Task :animatedux:extractDeepLinksForAarDebug
 > Task :animatedux:prepareLintJarForPublish
-> Task :animatedux:mergeDebugAssets
 > Task :animatedux:mergeDebugJniLibFolders
 > Task :animatedux:mergeDebugNativeLibs NO-SOURCE
-> Task :animatedux:prepareDebugArtProfile
-> Task :animatedux:javaPreCompileDebug
+> Task :animatedux:extractDeepLinksForAarDebug
 > Task :animatedux:stripDebugDebugSymbols NO-SOURCE
-> Task :animatedux:writeDebugAarMetadata
+> Task :animatedux:mergeDebugAssets
 > Task :animatedux:copyDebugJniLibsProjectAndLocalJars
+> Task :animatedux:javaPreCompileDebug
+> Task :animatedux:prepareDebugArtProfile
+> Task :animatedux:writeDebugAarMetadata
+> Task :app:preDebugBuild UP-TO-DATE
 > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
 > Task :Network:transport-raknet:processResources NO-SOURCE
 > Task :animatedux:packageDebugResources
+> Task :Network:transport-raknet:generateEffectiveLombokConfig
 > Task :animatedux:processDebugManifest
 > Task :minecraft-msftauth:processResources NO-SOURCE
-> Task :Protocol:bedrock-codec:generateEffectiveLombokConfig
-> Task :Network:transport-raknet:generateEffectiveLombokConfig
-> Task :Protocol:common:generateEffectiveLombokConfig FROM-CACHE
-> Task :animatedux:parseDebugLocalResources
-> Task :animatedux:generateDebugRFile
-
-Note: /home/runner/work/ZephyrMC/ZephyrMC/minecraft-msftauth/src/main/java/coelho/msftauth/util/der/DerInputStream.java uses unchecked or unsafe operations.
-> Task :minecraft-msftauth:compileJava
-Note: Recompile with -Xlint:unchecked for details.
-Note: Some input files use or override a deprecated API.
-
-Note: Recompile with -Xlint:deprecation for details.
-> Task :Protocol:common:delombok
-Note: Some input files use unchecked or unsafe operations.
-
-Note: Recompile with -Xlint:unchecked for details.
-> Task :Network:transport-raknet:compileJava
-
-> Task :Network:transport-raknet:classes
-> Task :Network:transport-raknet:jar
-> Task :Protocol:bedrock-connection:generateEffectiveLombokConfig FROM-CACHE
-> Task :Protocol:bedrock-connection:processResources NO-SOURCE
-> Task :Protocol:bedrock-codec:processResources NO-SOURCE
-> Task :Protocol:common:processResources NO-SOURCE
 > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :app:generateDebugResources
-> Task :minecraft-msftauth:classes
-> Task :minecraft-msftauth:jar
+> Task :app:packageDebugResources
+> Task :animatedux:parseDebugLocalResources
+> Task :animatedux:generateDebugRFile
+> Task :app:parseDebugLocalResources
+Note: /home/runner/work/ZephyrMC/ZephyrMC/minecraft-msftauth/src/main/java/coelho/msftauth/util/der/DerInputStream.java uses unchecked or unsafe operations.
+
+Note: Recompile with -Xlint:unchecked for details.
+> Task :minecraft-msftauth:compileJava
+
+> Task :app:generateDebugRFile
 > Task :Lunaris:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :Lunaris:preBuild UP-TO-DATE
 > Task :Lunaris:preDebugBuild UP-TO-DATE
 > Task :Lunaris:generateDebugResources
 > Task :Lunaris:packageDebugResources
-> Task :app:packageDebugResources
-> Task :app:parseDebugLocalResources
-> Task :app:generateDebugRFile
+Note: Some input files use or override a deprecated API.
+
+> Task :Network:transport-raknet:compileJava
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :Lunaris:parseDebugLocalResources
+> Task :Lunaris:generateDebugRFile
 > Task :Lunaris:javaPreCompileDebug FROM-CACHE
 > Task :lunarisrpc:preBuild UP-TO-DATE
 > Task :lunarisrpc:preDebugBuild UP-TO-DATE
 > Task :lunarisrpc:generateDebugResources FROM-CACHE
+> Task :Network:transport-raknet:classes
 > Task :lunarisrpc:packageDebugResources
-warning: The following options were not recognized by any processor: '[suppressWarnings]'
-
-> Task :Protocol:common:compileJava
-
 > Task :lunarisrpc:parseDebugLocalResources
-> Task :Lunaris:parseDebugLocalResources
 > Task :lunarisrpc:generateDebugRFile
 > Task :lunarisrpc:javaPreCompileDebug FROM-CACHE
-> Task :Lunaris:generateDebugRFile
+> Task :minecraft-msftauth:classes
+> Task :Network:transport-raknet:jar
 > Task :Pixie:preBuild UP-TO-DATE
 > Task :Pixie:preDebugBuild UP-TO-DATE
-Note: /home/runner/work/ZephyrMC/ZephyrMC/Protocol/common/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/common/util/Int2ObjectBiMap.java uses or overrides a deprecated API.
-
-> Task :Protocol:common:compileJava
-Note: Recompile with -Xlint:deprecation for details.
-Note: /home/runner/work/ZephyrMC/ZephyrMC/Protocol/common/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/common/util/Zlib.java uses unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-1 warning
-
+> Task :minecraft-msftauth:jar
 > Task :Pixie:dataBindingMergeDependencyArtifactsDebug
-> Task :Protocol:common:classes
-> Task :Protocol:common:jar
 > Task :Pixie:generateDebugResources
 > Task :Pixie:packageDebugResources
-> Task :Pixie:parseDebugLocalResources
 > Task :lunarisrpc:compileDebugJavaWithJavac
 > Task :lunarisrpc:bundleLibCompileToJarDebug
-> Task :Pixie:generateDebugRFile
 > Task :Pixie:javaPreCompileDebug FROM-CACHE
 > Task :SSC:preBuild UP-TO-DATE
 > Task :SSC:preDebugBuild UP-TO-DATE
 > Task :SSC:generateDebugResources
-> Task :Pixie:dataBindingGenBaseClassesDebug
 > Task :SSC:packageDebugResources
 > Task :SSC:parseDebugLocalResources
 > Task :SSC:generateDebugRFile
@@ -147,13 +111,16 @@ Note: Recompile with -Xlint:unchecked for details.
 > Task :TablerIcons:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :TablerIcons:preBuild UP-TO-DATE
 > Task :TablerIcons:preDebugBuild UP-TO-DATE
+> Task :Pixie:parseDebugLocalResources
 > Task :TablerIcons:generateDebugBuildConfig
-
+> Task :Pixie:generateDebugRFile
+> Task :TablerIcons:generateDebugResources
+> Task :Pixie:dataBindingGenBaseClassesDebug
 Note: Some input files use or override a deprecated API.
+
 Note: Recompile with -Xlint:deprecation for details.
 > Task :Pixie:compileDebugJavaWithJavac
 
-> Task :TablerIcons:generateDebugResources
 > Task :Pixie:bundleLibCompileToJarDebug
 > Task :TablerIcons:javaPreCompileDebug FROM-CACHE
 > Task :app:javaPreCompileDebug FROM-CACHE
@@ -168,163 +135,54 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :SSC:mergeDebugAssets
 > Task :TablerIcons:generateDebugAssets UP-TO-DATE
 > Task :TablerIcons:mergeDebugAssets
-> Task :animatedux:compileDebugKotlin
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityDataTypes.java:62: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+> Task :TablerIcons:packageDebugResources
+> Task :TablerIcons:parseDebugLocalResources
 > Task :app:mergeDebugAssets
-    public static final EntityDataType<BlockDefinition> CARRY_BLOCK_STATE = new EntityDataType<>(BlockDefinition.class, "CARRY_BLOCK_STATE");
-
-> Task :Protocol:bedrock-codec:delombok
-                                                        ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/response/ItemStackResponseContainer.java:19: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    ContainerSlotType container;
-                      ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/TextProcessingEventOrigin.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    SLASH_COMMAND_NON_CHAT,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/TextProcessingEventOrigin.java:23: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    SCOREBOARD_TEXT,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/TextProcessingEventOrigin.java:28: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    TICKING_AREA_TEXT,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/action/ItemStackRequestActionType.java:25: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    PLACE_IN_ITEM_CONTAINER,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/action/ItemStackRequestActionType.java:29: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    TAKE_FROM_ITEM_CONTAINER
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public float rowingTime;
-                 ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:48: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-        ROW_RIGHT,
-        ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:52: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-        ROW_LEFT,
-        ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/InventoryContentPacket.java:28: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public int dynamicContainerSize;
-               ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/InventorySlotPacket.java:26: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public int dynamicContainerSize;
-               ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/PlayerAuthInputPacket.java:31: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public Vector3f vrGazeDirection;
-                    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/PlayerInputPacket.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-public class PlayerInputPacket implements BedrockPacket {
-       ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/RiderJumpPacket.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-public class RiderJumpPacket implements BedrockPacket {
-       ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/ResourcePacksInfoPacket.java:17: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public final List<Entry> behaviorPackInfos = new ObjectArrayList<>();
-                             ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/ResourcePacksInfoPacket.java:29: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public boolean forcingServerPacksEnabled;
-                   ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/StartGamePacket.java:101: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public AuthoritativeMovementMode authoritativeMovementMode;
-                                     ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/StartGamePacket.java:112: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public List<ItemDefinition> itemDefinitions = new ObjectArrayList<>();
-                                ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/BiomeDefinitionListPacket.java:21: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public NbtMap definitions;
-                  ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/CodeBuilderSourcePacket.java:21: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public String value;
-                  ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/CameraAimAssistPresetsPacket.java:22: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public final List<CameraAimAssistCategories> categories = new ObjectArrayList<>();
-                                                 ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityFlag.java:118: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    SCENTING,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityFlag.java:123: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    RISING,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityFlag.java:128: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    FEELING_HAPPY,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/camera/CameraAimAssistPresetDefinition.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    private String categories;
-                   ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/camera/CameraAimAssistPresetDefinition.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    private final List<String> exclusionList = new ObjectArrayList<>();
-                               ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/AuthoritativeMovementMode.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    CLIENT,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/camera/CameraPreset.java:75: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    private OptionalBoolean alignTargetAndCameraForward = OptionalBoolean.empty();
-                            ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/structure/StructureTemplateResponseType.java:11: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    IMPORT;
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/structure/StructureTemplateRequestOperation.java:12: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    IMPORT;
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/DisconnectFailReason.java:96: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    REALMS_SESSION_NOT_FOUND_DEPRECATED,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/PlayerAuthInputData.java:9: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    NORTH_JUMP,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/InputMode.java:11: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    MOTION_CONTROLLER;
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:10: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    VIEWER,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    REALITY,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    PLACEMENT,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:22: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    LIVING_ROOM,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:27: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    EXIT_LEVEL_LIVING_ROOM
-    ^
-
+> Task :TablerIcons:generateDebugRFile
 > Task :app:compressDebugAssets
 > Task :Pixie:bundleLibRuntimeToJarDebug
-> Task :TablerIcons:packageDebugResources
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/ItemStackRequestSlotData.java:17: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-
-    ContainerSlotType container;
-> Task :Protocol:bedrock-codec:delombok
-                      ^
-
-> Task :TablerIcons:parseDebugLocalResources
-> Task :TablerIcons:generateDebugRFile
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/ContainerId.java:52: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-
-> Task :Protocol:bedrock-codec:delombok
-    public static final int CONTAINER_ID_REGISTRY_INVENTORY = 126;
-                            ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityDamageCause.java:40: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    MACE_SMASH;
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/LevelEvent.java:118: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    PARTICLE_CREAKING_HEART_TRIAL,
-    ^
-
 > Task :SSC:bundleLibRuntimeToJarDebug
 > Task :lunarisrpc:bundleLibRuntimeToJarDebug
-> Task :app:desugarDebugFileDependencies
-> Task :animatedux:compileDebugLibraryResources
-> Task :Lunaris:writeDebugAarMetadata
-> Task :lunarisrpc:writeDebugAarMetadata
-> Task :Pixie:writeDebugAarMetadata
-> Task :SSC:writeDebugAarMetadata
-> Task :TablerIcons:writeDebugAarMetadata
-> Task :app:checkDebugAarMetadata
-> Task :app:mapDebugSourceSetPaths
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/CameraPresetDefinition.kt:4:34 Unresolved reference 'common'.
 
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/CameraPresetDefinition.kt:10:5 Unresolved reference 'NamedDefinition'.
+> Task :Lunaris:compileDebugKotlin
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/CameraPresetDefinition.kt:18:5 'getRuntimeId' overrides nothing.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/CameraPresetDefinition.kt:22:5 'getIdentifier' overrides nothing.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:8:34 Unresolved reference 'common'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:9:34 Unresolved reference 'common'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:10:34 Unresolved reference 'common'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:17:26 Unresolved reference 'DefinitionRegistry'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:17:63 Unresolved reference 'SimpleDefinitionRegistry'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:20:27 Unresolved reference 'DefinitionRegistry'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:21:9 Unresolved reference 'SimpleDefinitionRegistry'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:24:34 Unresolved reference 'DefinitionRegistry'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:24:53 Unresolved reference 'NamedDefinition'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:24:72 Unresolved reference 'SimpleDefinitionRegistry'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:24:105 Unresolved reference 'NamedDefinition'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:27:33 Unresolved reference 'DefinitionRegistry'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:28:9 Unresolved reference 'SimpleDefinitionRegistry'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:7:34 Unresolved reference 'common'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:13:5 Unresolved reference 'DefinitionRegistry'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:25:5 'getDefinition' overrides nothing.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:29:5 'isRegistered' overrides nothing.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:30:66 Function invocation 'runtimeId()' expected.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:34:10 Class 'NbtBlockDefinitionRegistry.NbtBlockDefinition' is not abstract and does not implement abstract member 'runtimeId'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/NbtBlockDefinitionRegistry.kt:35:9 'getRuntimeId' overrides nothing.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/handler/SessionCloseHandler.kt:3:12 Unresolved reference 'kyori'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/handler/SessionCloseHandler.kt:8:5 'onDisconnect' overrides nothing. Potential signatures for overriding:
+fun onDisconnect(reason: String!): Unit
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:62:48 Unresolved reference 'v897'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/AutoCodecPacketListener.kt:85:24 Unresolved reference 'Bedrock_v897'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:10:34 Unresolved reference 'common'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:11:34 Unresolved reference 'common'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:20:43 Unresolved reference 'SimpleDefinitionRegistry'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:22:18 Unresolved reference 'build'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:37:17 Unresolved reference 'SimpleDefinitionRegistry'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:37:50 Unresolved reference 'NamedDefinition'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:41:22 Unresolved reference 'build'.
+
+> Task :Lunaris:compileDebugKotlin FAILED
 > Task :animatedux:compileDebugKotlin
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr/zephyrux/MainActivity.kt:93:26 'var systemUiVisibility: Int' is deprecated. Deprecated in Java.
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr/zephyrux/MainActivity.kt:94:22 'static field SYSTEM_UI_FLAG_IMMERSIVE_STICKY: Int' is deprecated. Deprecated in Java.
@@ -357,457 +215,33 @@ w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr/zephyrux/components/VideoBackground.kt:103:13 'constructor(p0: Context): PlayerView' is deprecated. Deprecated in Java.
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr/zephyrux/components/VideoBackground.kt:106:30 'class AspectRatioFrameLayout : FrameLayout' is deprecated. Deprecated in Java.
 w: file:///home/runner/work/ZephyrMC/ZephyrMC/animatedux/src/main/java/io/zephyr/zephyrux/components/VideoBackground.kt:107:34 'class PlayerView : FrameLayout, AdViewProvider' is deprecated. Deprecated in Java.
-warning: The following options were not recognized by any processor: '[suppressWarnings]'
 
-> Task :Protocol:bedrock-codec:compileJava
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/entity/EntityDataTypes.java:57: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public static final EntityDataType<BlockDefinition> CARRY_BLOCK_STATE = new EntityDataType<>(BlockDefinition.class, "CARRY_BLOCK_STATE");
-                                                        ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/response/ItemStackResponseContainer.java:16: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    private final ContainerSlotType container;
-                                    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/response/ItemStackResponseContainer.java:37: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public ItemStackResponseContainer(final ContainerSlotType container, final List<ItemStackResponseSlot> items, final FullContainerName containerName) {
-           ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/TextProcessingEventOrigin.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    SLASH_COMMAND_NON_CHAT,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/TextProcessingEventOrigin.java:23: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    SCOREBOARD_TEXT,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/TextProcessingEventOrigin.java:28: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    TICKING_AREA_TEXT,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/action/ItemStackRequestActionType.java:25: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    PLACE_IN_ITEM_CONTAINER,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/action/ItemStackRequestActionType.java:29: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    TAKE_FROM_ITEM_CONTAINER
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:10: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public float rowingTime;
-                 ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:36: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-        ROW_RIGHT, /**
-        ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:39: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-        ROW_LEFT;
-        ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/InventoryContentPacket.java:21: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public int dynamicContainerSize;
-               ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/InventorySlotPacket.java:20: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public int dynamicContainerSize;
-               ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/PlayerAuthInputPacket.java:24: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public Vector3f vrGazeDirection;
-                    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/PlayerInputPacket.java:9: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-public class PlayerInputPacket implements BedrockPacket {
-       ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/RiderJumpPacket.java:8: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-public class RiderJumpPacket implements BedrockPacket {
-       ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/ResourcePacksInfoPacket.java:13: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public final List<Entry> behaviorPackInfos = new ObjectArrayList<>();
-                             ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/ResourcePacksInfoPacket.java:25: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public boolean forcingServerPacksEnabled;
-                   ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/StartGamePacket.java:94: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public AuthoritativeMovementMode authoritativeMovementMode;
-                                     ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/StartGamePacket.java:105: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public List<ItemDefinition> itemDefinitions = new ObjectArrayList<>();
-                                ^
-
-> Task :app:mergeDebugResources
-> Task :animatedux:compileDebugJavaWithJavac NO-SOURCE
-> Task :animatedux:mergeDebugGeneratedProguardFiles
-> Task :animatedux:mergeDebugConsumerProguardFiles
-> Task :animatedux:processDebugJavaRes
-> Task :animatedux:mergeDebugJavaResource
-> Task :animatedux:bundleLibCompileToJarDebug
-> Task :animatedux:bundleLibRuntimeToJarDebug
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/BiomeDefinitionListPacket.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-
-    public NbtMap definitions;
-> Task :Protocol:bedrock-codec:compileJava
-                  ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/CodeBuilderSourcePacket.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public String value;
-                  ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/packet/CameraAimAssistPresetsPacket.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public final List<CameraAimAssistCategories> categories = new ObjectArrayList<>();
-                                                 ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/entity/EntityFlag.java:118: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    SCENTING,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/entity/EntityFlag.java:123: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    RISING,
-    ^
-
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/entity/EntityFlag.java:128: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-> Task :animatedux:extractDebugAnnotations
-    FEELING_HAPPY,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/camera/CameraAimAssistPresetDefinition.java:11: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    private String categories;
-                   ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/camera/CameraAimAssistPresetDefinition.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    private final List<String> exclusionList = new ObjectArrayList<>();
-                               ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/AuthoritativeMovementMode.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    CLIENT,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/camera/CameraPreset.java:62: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    private OptionalBoolean alignTargetAndCameraForward;
-                            ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/camera/CameraPreset.java:963: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public CameraPreset(final String identifier, final String parentPreset, final Vector3f pos, final Float yaw, final Float pitch, final Vector2f viewOffset, final Float radius, final Float minYawLimit, final Float maxYawLimit, final CameraAudioListener listener, final OptionalBoolean playEffect, final Float rotationSpeed, final OptionalBoolean snapToTarget, final Vector3f entityOffset, final Vector2f horizontalRotationLimit, final Vector2f verticalRotationLimit, final OptionalBoolean continueTargeting, final OptionalBoolean alignTargetAndCameraForward, final Float blockListeningRadius, final CameraAimAssistPreset aimAssistPreset, @Nullable final ControlScheme controlScheme) {
-           ^
-> Task :animatedux:syncDebugLibJars
-> Task :animatedux:bundleDebugAar
-> Task :animatedux:assembleDebug
-> Task :app:createDebugCompatibleScreenManifests
-> Task :animatedux:extractDeepLinksDebug
-> Task :app:extractDeepLinksDebug FROM-CACHE
-> Task :Lunaris:extractDeepLinksDebug FROM-CACHE
-> Task :Lunaris:processDebugManifest
-> Task :lunarisrpc:extractDeepLinksDebug FROM-CACHE
-> Task :lunarisrpc:processDebugManifest
-> Task :Pixie:extractDeepLinksDebug FROM-CACHE
-> Task :Pixie:processDebugManifest
-> Task :SSC:extractDeepLinksDebug FROM-CACHE
-> Task :SSC:processDebugManifest
-> Task :TablerIcons:extractDeepLinksDebug FROM-CACHE
-> Task :TablerIcons:processDebugManifest
-
-> Task :app:processDebugMainManifest
-/home/runner/work/ZephyrMC/ZephyrMC/app/src/main/AndroidManifest.xml:9:5-77 Warning:
-	Element uses-permission#android.permission.FOREGROUND_SERVICE at AndroidManifest.xml:9:5-77 duplicated with element declared at AndroidManifest.xml:8:5-77
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/structure/StructureTemplateResponseType.java:11: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    IMPORT;
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/structure/StructureTemplateRequestOperation.java:12: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    IMPORT;
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/DisconnectFailReason.java:96: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    REALMS_SESSION_NOT_FOUND_DEPRECATED,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/PlayerAuthInputData.java:9: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    NORTH_JUMP,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/InputMode.java:11: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    MOTION_CONTROLLER;
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:10: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    VIEWER,
-    ^
-
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    REALITY,
-> Task :app:processDebugManifest
-> Task :app:processDebugManifestForPackage
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-
-    PLACEMENT,
-> Task :Protocol:bedrock-codec:compileJava
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:22: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    LIVING_ROOM,
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:27: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    EXIT_LEVEL_LIVING_ROOM
-    ^
-
-> Task :Lunaris:compileDebugLibraryResources
-> Task :lunarisrpc:compileDebugLibraryResources FROM-CACHE
-> Task :Pixie:compileDebugLibraryResources
-> Task :SSC:compileDebugLibraryResources
 > Task :TablerIcons:compileDebugKotlin
-> Task :lunarisrpc:processDebugJavaRes NO-SOURCE
-> Task :Pixie:processDebugJavaRes NO-SOURCE
-> Task :SSC:processDebugJavaRes NO-SOURCE
-> Task :TablerIcons:processDebugJavaRes
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/ItemStackRequestSlotData.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-
-> Task :Protocol:bedrock-codec:compileJava
-    private final ContainerSlotType container;
-                                    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/ItemStackRequestSlotData.java:45: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public ItemStackRequestSlotData(final ContainerSlotType container, final int slot, final int stackNetworkId, final FullContainerName containerName) {
-           ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/inventory/ContainerId.java:44: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    public static final int CONTAINER_ID_REGISTRY_INVENTORY = 126;
-                            ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/entity/EntityDamageCause.java:40: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    MACE_SMASH;
-    ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/data/LevelEvent.java:118: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-    PARTICLE_CREAKING_HEART_TRIAL,
-    ^
-Note: Some input files use or override a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-Note: Some input files use unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-47 warnings
-
-> Task :app:checkDebugDuplicateClasses
-> Task :TablerIcons:compileDebugJavaWithJavac
-> Task :Protocol:bedrock-codec:classes
-> Task :Protocol:bedrock-codec:jar
-> Task :TablerIcons:compileDebugLibraryResources
-> Task :TablerIcons:bundleLibCompileToJarDebug
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/netty/codec/compression/SnappyCompression.java:13: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
-
-import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
-> Task :Protocol:bedrock-connection:delombok
-                      ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/netty/codec/compression/SnappyCompression.java:13: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
-import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
-                      ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/netty/codec/compression/SnappyCompression.java:13: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
-import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
-                      ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/netty/codec/compression/SnappyCompression.java:13: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
-import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
-                      ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/netty/codec/compression/SnappyCompression.java:13: warning: sun.misc.Unsafe is internal proprietary API and may be removed in a future release
-import static sun.misc.Unsafe.ARRAY_BYTE_BASE_OFFSET;
-                      ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/src/main/java/org/cloudburstmc/protocol/bedrock/util/ChainValidationResult.java:131: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-        public final UUID identity;
-                          ^
-warning: The following options were not recognized by any processor: '[suppressWarnings]'
-
-> Task :Protocol:bedrock-connection:compileJava
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/util/ChainValidationResult.java:123: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-        public final UUID identity;
-                          ^
-Note: /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/util/EncryptionUtils.java uses unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-2 warnings
-
-> Task :TablerIcons:bundleLibRuntimeToJarDebug
-> Task :Protocol:bedrock-connection:classes
-> Task :Protocol:bedrock-connection:jar
-> Task :app:mergeExtDexDebug
-> Task :app:processDebugResources
-> Task :animatedux:bundleLibRuntimeToDirDebug
-> Task :Lunaris:compileDebugKotlin
-> Task :Pixie:bundleLibRuntimeToDirDebug
-> Task :SSC:bundleLibRuntimeToDirDebug
-> Task :TablerIcons:bundleLibRuntimeToDirDebug
-> Task :lunarisrpc:bundleLibRuntimeToDirDebug
-> Task :animatedux:copyDebugJniLibsProjectOnly
-
-> Task :app:configureCMakeDebug[arm64-v8a]
-Checking the license for package CMake 3.22.1 in /usr/local/lib/android/sdk/licenses
-License for package CMake 3.22.1 accepted.
-Preparing "Install CMake 3.22.1 v.3.22.1".
-"Install CMake 3.22.1 v.3.22.1" ready.
-Installing CMake 3.22.1 in /usr/local/lib/android/sdk/cmake/3.22.1
-"Install CMake 3.22.1 v.3.22.1" complete.
-"Install CMake 3.22.1 v.3.22.1" finished.
-
-> Task :app:configureCMakeDebug[armeabi-v7a]
-> Task :app:buildCMakeDebug[arm64-v8a]
-> Task :app:buildCMakeDebug[armeabi-v7a]
-> Task :app:configureCMakeDebug[x86]
-> Task :app:configureCMakeDebug[x86_64]
-> Task :app:buildCMakeDebug[x86]
-> Task :app:mergeDebugJniLibFolders
-> Task :Lunaris:configureCMakeDebug[arm64-v8a]
-> Task :app:buildCMakeDebug[x86_64]
-> Task :Lunaris:configureCMakeDebug[armeabi-v7a]
-> Task :Lunaris:buildCMakeDebug[arm64-v8a]
-> Task :Lunaris:buildCMakeDebug[armeabi-v7a]
-> Task :Lunaris:configureCMakeDebug[x86]
-> Task :Lunaris:configureCMakeDebug[x86_64]
-> Task :Lunaris:buildCMakeDebug[x86]
-> Task :Lunaris:mergeDebugJniLibFolders
-> Task :lunarisrpc:mergeDebugJniLibFolders
-> Task :lunarisrpc:mergeDebugNativeLibs NO-SOURCE
-> Task :lunarisrpc:copyDebugJniLibsProjectOnly
-> Task :Pixie:configureCMakeDebug[arm64-v8a]
-> Task :Lunaris:buildCMakeDebug[x86_64]
-> Task :Lunaris:mergeDebugNativeLibs
-> Task :Lunaris:copyDebugJniLibsProjectOnly
-> Task :Pixie:configureCMakeDebug[armeabi-v7a]
-> Task :Pixie:buildCMakeDebug[arm64-v8a]
-> Task :Pixie:buildCMakeDebug[armeabi-v7a]
-> Task :Pixie:configureCMakeDebug[x86]
-> Task :Pixie:configureCMakeDebug[x86_64]
-> Task :Pixie:buildCMakeDebug[x86]
-> Task :Pixie:mergeDebugJniLibFolders
-> Task :Pixie:buildCMakeDebug[x86_64]
-> Task :Pixie:mergeDebugNativeLibs
-> Task :Pixie:copyDebugJniLibsProjectOnly
-
-> Task :SSC:configureCMakeDebug[arm64-v8a]
-C/C++: CMake Warning (dev) in CMakeLists.txt:
-C/C++:   No project() command is present.  The top-level CMakeLists.txt file must
-C/C++:   contain a literal, direct call to the project() command.  Add a line of
-C/C++:   code such as
-C/C++:     project(ProjectName)
-C/C++:   near the top of the file, but after cmake_minimum_required().
-C/C++:   CMake is pretending there is a "project(Project)" command on the first
-C/C++:   line.
-C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
-
-> Task :SSC:configureCMakeDebug[armeabi-v7a]
-C/C++: CMake Warning (dev) in CMakeLists.txt:
-C/C++:   No project() command is present.  The top-level CMakeLists.txt file must
-C/C++:   contain a literal, direct call to the project() command.  Add a line of
-C/C++:   code such as
-C/C++:     project(ProjectName)
-C/C++:   near the top of the file, but after cmake_minimum_required().
-C/C++:   CMake is pretending there is a "project(Project)" command on the first
-C/C++:   line.
-C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
-
-> Task :SSC:buildCMakeDebug[arm64-v8a]
-> Task :SSC:buildCMakeDebug[armeabi-v7a]
-
-> Task :SSC:configureCMakeDebug[x86]
-C/C++: CMake Warning (dev) in CMakeLists.txt:
-C/C++:   No project() command is present.  The top-level CMakeLists.txt file must
-C/C++:   contain a literal, direct call to the project() command.  Add a line of
-C/C++:   code such as
-C/C++:     project(ProjectName)
-C/C++:   near the top of the file, but after cmake_minimum_required().
-C/C++:   CMake is pretending there is a "project(Project)" command on the first
-C/C++:   line.
-C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
-
-> Task :SSC:configureCMakeDebug[x86_64]
-C/C++: CMake Warning (dev) in CMakeLists.txt:
-C/C++:   No project() command is present.  The top-level CMakeLists.txt file must
-C/C++:   contain a literal, direct call to the project() command.  Add a line of
-C/C++:   code such as
-C/C++:     project(ProjectName)
-C/C++:   near the top of the file, but after cmake_minimum_required().
-C/C++:   CMake is pretending there is a "project(Project)" command on the first
-C/C++:   line.
-C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
-
-> Task :SSC:buildCMakeDebug[x86]
-> Task :SSC:mergeDebugJniLibFolders
-> Task :TablerIcons:mergeDebugJniLibFolders
-> Task :TablerIcons:mergeDebugNativeLibs NO-SOURCE
-> Task :TablerIcons:copyDebugJniLibsProjectOnly
-> Task :app:validateSigningDebug
-> Task :app:writeDebugAppMetadata
-> Task :app:writeDebugSigningConfigVersions
-> Task :Lunaris:stripDebugDebugSymbols
-> Task :Lunaris:copyDebugJniLibsProjectAndLocalJars
-> Task :Lunaris:extractDeepLinksForAarDebug FROM-CACHE
-> Task :Lunaris:prepareDebugArtProfile
-> Task :Lunaris:prepareLintJarForPublish
-> Task :lunarisrpc:stripDebugDebugSymbols NO-SOURCE
-> Task :lunarisrpc:copyDebugJniLibsProjectAndLocalJars
-> Task :lunarisrpc:extractDebugAnnotations
-> Task :lunarisrpc:extractDeepLinksForAarDebug FROM-CACHE
-> Task :lunarisrpc:mergeDebugGeneratedProguardFiles
-> Task :lunarisrpc:mergeDebugConsumerProguardFiles
-> Task :lunarisrpc:prepareDebugArtProfile
-> Task :lunarisrpc:prepareLintJarForPublish
-> Task :lunarisrpc:mergeDebugJavaResource
-> Task :lunarisrpc:syncDebugLibJars
-> Task :SSC:buildCMakeDebug[x86_64]
-> Task :lunarisrpc:bundleDebugAar
-> Task :lunarisrpc:assembleDebug
-> Task :SSC:mergeDebugNativeLibs
-> Task :SSC:copyDebugJniLibsProjectOnly
-> Task :Pixie:stripDebugDebugSymbols
-> Task :Pixie:copyDebugJniLibsProjectAndLocalJars
-> Task :Pixie:extractDebugAnnotations
-> Task :Pixie:extractDeepLinksForAarDebug FROM-CACHE
-> Task :Pixie:mergeDebugGeneratedProguardFiles
-> Task :Pixie:mergeDebugConsumerProguardFiles
-> Task :Pixie:prepareDebugArtProfile
-> Task :Pixie:prepareLintJarForPublish
-> Task :app:mergeDebugNativeLibs
-> Task :Pixie:mergeDebugJavaResource
-> Task :Pixie:syncDebugLibJars
-
-> Task :Lunaris:compileDebugKotlin
-w: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:11:8 'class NioEventLoopGroup : MultiThreadIoEventLoopGroup, IoEventLoopGroup' is deprecated. Deprecated in Java.
-w: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/ZephyrRelay.kt:52:50 'constructor(): NioEventLoopGroup' is deprecated. Deprecated in Java.
-w: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/definition/Definitions.kt:32:9 Only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type 'java.lang.ClassLoader?'.
-w: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/BiomeDefinitionListPacketListener.kt:38:32 'field definitions: NbtMap!' is deprecated. Deprecated in Java.
-w: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/zephyr/relay/listener/GamingPacketHandler.kt:21:32 'field itemDefinitions: (Mutable)List<ItemDefinition!>!' is deprecated. Deprecated in Java.
-
-> Task :app:stripDebugDebugSymbols
-> Task :SSC:stripDebugDebugSymbols
-> Task :Lunaris:compileDebugJavaWithJavac NO-SOURCE
-> Task :Lunaris:bundleLibCompileToJarDebug
-> Task :Lunaris:processDebugJavaRes
-> Task :Lunaris:bundleLibRuntimeToJarDebug
-> Task :Pixie:bundleDebugAar
-> Task :Lunaris:bundleLibRuntimeToDirDebug
-> Task :Lunaris:extractDebugAnnotations
-> Task :Lunaris:mergeDebugGeneratedProguardFiles
-> Task :Lunaris:mergeDebugConsumerProguardFiles
-> Task :Lunaris:mergeDebugJavaResource
-> Task :Lunaris:syncDebugLibJars
-> Task :Lunaris:bundleDebugAar
-> Task :Lunaris:assembleDebug
-> Task :Pixie:assembleDebug
-> Task :app:mergeLibDexDebug
-> Task :SSC:copyDebugJniLibsProjectAndLocalJars
-> Task :SSC:extractDeepLinksForAarDebug FROM-CACHE
-> Task :SSC:mergeDebugGeneratedProguardFiles
-> Task :SSC:mergeDebugConsumerProguardFiles
-> Task :SSC:extractDebugAnnotations
-> Task :SSC:prepareDebugArtProfile
-> Task :SSC:prepareLintJarForPublish
-> Task :TablerIcons:stripDebugDebugSymbols NO-SOURCE
-> Task :SSC:mergeDebugJavaResource
-> Task :SSC:syncDebugLibJars
-> Task :TablerIcons:copyDebugJniLibsProjectAndLocalJars
-> Task :TablerIcons:extractDebugAnnotations
-> Task :TablerIcons:extractDeepLinksForAarDebug FROM-CACHE
-> Task :TablerIcons:mergeDebugGeneratedProguardFiles
-> Task :TablerIcons:mergeDebugConsumerProguardFiles
-> Task :TablerIcons:prepareDebugArtProfile
-> Task :TablerIcons:prepareLintJarForPublish
-> Task :TablerIcons:mergeDebugJavaResource
-> Task :TablerIcons:syncDebugLibJars
-> Task :SSC:bundleDebugAar
-> Task :SSC:assembleDebug
-> Task :TablerIcons:bundleDebugAar
-> Task :TablerIcons:assembleDebug
-
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/app/src/main/java/com/project/zephyr/client/activity/LaunchActivity.kt:18:19 Unresolved reference 'firebase'.
-> Task :app:compileDebugKotlin FAILED
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/app/src/main/java/com/project/zephyr/client/activity/LaunchActivity.kt:117:13 Unresolved reference 'FirebaseCrashlytics'.
 
 
-FAILURE: Build failed with an exception.
 [Incubating] Problems report is available at: file:///home/runner/work/ZephyrMC/ZephyrMC/build/reports/problems/problems-report.html
+FAILURE: Build failed with an exception.
 
 
 * What went wrong:
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
-Execution failed for task ':app:compileDebugKotlin'.
 
+Execution failed for task ':Lunaris:compileDebugKotlin'.
 > A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
 You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
-   > Compilation error. See log for more details
 For more on this, please refer to https://docs.gradle.org/8.12.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+69 actionable tasks: 62 executed, 7 from cache
+Configuration cache entry stored.
+   > Compilation error. See log for more details
 
-244 actionable tasks: 223 executed, 21 from cache
 * Try:
 > Run with --info or --debug option to get more log output.
 > Run with --scan to get full insights.
 > Get more help at https://help.gradle.org.
 
 * Exception is:
-org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:compileDebugKotlin'.
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':Lunaris:compileDebugKotlin'.
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:130)
 	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:293)
 	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:128)
@@ -1003,6 +437,5 @@ Caused by: org.jetbrains.kotlin.gradle.tasks.CompilationErrorException: Compilat
 	... 2 more
 
 
-BUILD FAILED in 5m 41s
-Configuration cache entry stored.
+BUILD FAILED in 2m 57s
 Error: Process completed with exit code 1.

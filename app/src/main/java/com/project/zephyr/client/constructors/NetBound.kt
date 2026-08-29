@@ -51,7 +51,7 @@ import org.cloudburstmc.protocol.bedrock.packet.CommandRequestPacket
 import org.cloudburstmc.protocol.bedrock.packet.MoveEntityAbsolutePacket
 import org.cloudburstmc.protocol.bedrock.packet.PlayerAuthInputPacket
 import org.cloudburstmc.protocol.bedrock.packet.ToastRequestPacket
-import org.cloudburstmc.protocol.common.SimpleDefinitionRegistry
+import com.project.zephyr.relay.definition.SimpleDefinitionRegistry
 import java.util.Collections
 import java.util.UUID
 

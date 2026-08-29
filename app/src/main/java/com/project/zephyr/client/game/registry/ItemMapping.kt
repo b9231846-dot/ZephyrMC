@@ -2,7 +2,7 @@ package com.project.zephyr.client.game.registry
 
 import android.content.Context
 import com.google.gson.JsonParser
-import org.cloudburstmc.protocol.common.DefinitionRegistry
+import com.project.zephyr.relay.definition.DefinitionRegistry
 import org.cloudburstmc.protocol.bedrock.data.definitions.ItemDefinition
 import java.io.InputStream
 

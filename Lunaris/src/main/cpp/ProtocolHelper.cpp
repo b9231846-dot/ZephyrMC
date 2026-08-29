@@ -101,7 +101,10 @@ static const std::vector<CodecInfo> protocols = {
         {844, "org/cloudburstmc/protocol/bedrock/codec/v844/Bedrock_v844"},
         {859, "org/cloudburstmc/protocol/bedrock/codec/v859/Bedrock_v859"},
         {860, "org/cloudburstmc/protocol/bedrock/codec/v860/Bedrock_v860"},
-        {897, "org/cloudburstmc/protocol/bedrock/codec/v898/Bedrock_v898"}
+        {898, "org/cloudburstmc/protocol/bedrock/codec/v898/Bedrock_v898"},
+        {924, "org/cloudburstmc/protocol/bedrock/codec/v924/Bedrock_v924"},
+        {944, "org/cloudburstmc/protocol/bedrock/codec/v944/Bedrock_v944"},
+        {975, "org/cloudburstmc/protocol/bedrock/codec/v975/Bedrock_v975"}
 };
 
 extern "C" JNIEXPORT jobject JNICALL
