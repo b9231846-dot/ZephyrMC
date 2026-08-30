@@ -37,55 +37,55 @@ No explicit dependency on the Checker Framework found, using default version 3.4
 > Configure project :Protocol:common
 No explicit dependency on the Checker Framework found, using default version 3.49.0
 
-> Task :animatedux:generateDebugAssets UP-TO-DATE
 > Task :animatedux:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :animatedux:generateDebugAssets UP-TO-DATE
+> Task :animatedux:preBuild UP-TO-DATE
 > Task :app:preBuild UP-TO-DATE
 > Task :app:preDebugBuild UP-TO-DATE
-> Task :animatedux:preBuild UP-TO-DATE
 > Task :animatedux:preDebugBuild UP-TO-DATE
 > Task :animatedux:generateDebugResources FROM-CACHE
-> Task :Network:transport-raknet:generateEffectiveLombokConfig FROM-CACHE
 > Task :animatedux:extractDeepLinksForAarDebug FROM-CACHE
 > Task :animatedux:prepareLintJarForPublish
 > Task :animatedux:packageDebugResources FROM-CACHE
 > Task :animatedux:javaPreCompileDebug FROM-CACHE
-> Task :animatedux:prepareDebugArtProfile
-> Task :animatedux:processDebugManifest FROM-CACHE
-> Task :animatedux:writeDebugAarMetadata
-> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
 > Task :animatedux:mergeDebugJniLibFolders
+> Task :animatedux:prepareDebugArtProfile
 > Task :animatedux:mergeDebugAssets
 > Task :animatedux:mergeDebugNativeLibs NO-SOURCE
-> Task :Network:transport-raknet:processResources NO-SOURCE
 > Task :animatedux:stripDebugDebugSymbols NO-SOURCE
+> Task :animatedux:writeDebugAarMetadata
+> Task :animatedux:processDebugManifest FROM-CACHE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :Network:transport-raknet:processResources NO-SOURCE
+> Task :Network:transport-raknet:generateEffectiveLombokConfig FROM-CACHE
 > Task :animatedux:copyDebugJniLibsProjectAndLocalJars
 > Task :minecraft-msftauth:processResources NO-SOURCE
 > Task :Protocol:bedrock-codec:generateEffectiveLombokConfig FROM-CACHE
 > Task :Protocol:common:generateEffectiveLombokConfig FROM-CACHE
+> Task :animatedux:parseDebugLocalResources FROM-CACHE
+> Task :animatedux:generateDebugRFile FROM-CACHE
+> Task :Protocol:common:delombok FROM-CACHE
 > Task :minecraft-msftauth:compileJava FROM-CACHE
 > Task :minecraft-msftauth:classes UP-TO-DATE
 > Task :Network:transport-raknet:compileJava FROM-CACHE
 > Task :Network:transport-raknet:classes UP-TO-DATE
+> Task :Protocol:common:compileJava FROM-CACHE
 > Task :minecraft-msftauth:jar
 > Task :Network:transport-raknet:jar
 > Task :Protocol:bedrock-connection:processResources NO-SOURCE
 > Task :Protocol:bedrock-codec:processResources NO-SOURCE
 > Task :Protocol:common:processResources NO-SOURCE
-> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :Protocol:common:classes UP-TO-DATE
 > Task :Protocol:bedrock-connection:generateEffectiveLombokConfig FROM-CACHE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugResources
+> Task :Protocol:common:jar
 > Task :Lunaris:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :Lunaris:preBuild UP-TO-DATE
 > Task :Lunaris:preDebugBuild UP-TO-DATE
-> Task :animatedux:parseDebugLocalResources FROM-CACHE
 > Task :Lunaris:generateDebugResources FROM-CACHE
-> Task :animatedux:generateDebugRFile FROM-CACHE
-> Task :Protocol:common:delombok FROM-CACHE
 > Task :Lunaris:packageDebugResources FROM-CACHE
-> Task :app:generateDebugResources
-> Task :Protocol:common:compileJava FROM-CACHE
 > Task :Lunaris:parseDebugLocalResources FROM-CACHE
-> Task :Protocol:common:classes UP-TO-DATE
-> Task :Protocol:common:jar
 > Task :Lunaris:generateDebugRFile FROM-CACHE
 > Task :Lunaris:javaPreCompileDebug FROM-CACHE
 > Task :lunarisrpc:preBuild UP-TO-DATE
@@ -101,45 +101,45 @@ No explicit dependency on the Checker Framework found, using default version 3.4
 > Task :animatedux:mergeDebugGeneratedProguardFiles
 > Task :animatedux:mergeDebugConsumerProguardFiles
 > Task :animatedux:processDebugJavaRes
-> Task :lunarisrpc:compileDebugJavaWithJavac FROM-CACHE
 > Task :animatedux:mergeDebugJavaResource
-> Task :animatedux:extractDebugAnnotations FROM-CACHE
-> Task :animatedux:syncDebugLibJars FROM-CACHE
 > Task :animatedux:bundleLibCompileToJarDebug
-> Task :lunarisrpc:bundleLibCompileToJarDebug
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
 > Task :Pixie:preBuild UP-TO-DATE
 > Task :Pixie:preDebugBuild UP-TO-DATE
-> Task :animatedux:bundleDebugAar
-> Task :animatedux:assembleDebug
+> Task :Pixie:dataBindingMergeDependencyArtifactsDebug
 > Task :Pixie:generateDebugResources FROM-CACHE
 > Task :Pixie:packageDebugResources FROM-CACHE
-> Task :app:parseDebugLocalResources
-> Task :Pixie:parseDebugLocalResources FROM-CACHE
-> Task :app:generateDebugRFile
-> Task :Pixie:generateDebugRFile FROM-CACHE
+> Task :animatedux:extractDebugAnnotations FROM-CACHE
+> Task :lunarisrpc:compileDebugJavaWithJavac FROM-CACHE
+> Task :lunarisrpc:bundleLibCompileToJarDebug
+> Task :animatedux:syncDebugLibJars FROM-CACHE
+> Task :Pixie:javaPreCompileDebug FROM-CACHE
 > Task :SSC:preBuild UP-TO-DATE
 > Task :SSC:preDebugBuild UP-TO-DATE
-> Task :Pixie:javaPreCompileDebug FROM-CACHE
+> Task :SSC:generateDebugResources FROM-CACHE
+> Task :SSC:packageDebugResources FROM-CACHE
+> Task :animatedux:bundleDebugAar
+> Task :animatedux:assembleDebug
+> Task :SSC:parseDebugLocalResources FROM-CACHE
 > Task :SSC:javaPreCompileDebug FROM-CACHE
 > Task :TablerIcons:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :TablerIcons:preBuild UP-TO-DATE
 > Task :TablerIcons:preDebugBuild UP-TO-DATE
-> Task :SSC:generateDebugResources FROM-CACHE
 > Task :TablerIcons:generateDebugBuildConfig FROM-CACHE
-> Task :Pixie:dataBindingMergeDependencyArtifactsDebug
-> Task :SSC:packageDebugResources FROM-CACHE
-> Task :SSC:parseDebugLocalResources FROM-CACHE
-> Task :TablerIcons:generateDebugResources FROM-CACHE
+> Task :Pixie:parseDebugLocalResources FROM-CACHE
 > Task :SSC:generateDebugRFile FROM-CACHE
+> Task :Pixie:generateDebugRFile FROM-CACHE
 > Task :SSC:compileDebugJavaWithJavac NO-SOURCE
 > Task :SSC:bundleLibCompileToJarDebug
+> Task :TablerIcons:generateDebugResources FROM-CACHE
 > Task :TablerIcons:javaPreCompileDebug FROM-CACHE
 > Task :app:javaPreCompileDebug FROM-CACHE
 > Task :app:generateDebugAssets UP-TO-DATE
-> Task :Pixie:dataBindingGenBaseClassesDebug FROM-CACHE
 > Task :Lunaris:generateDebugAssets UP-TO-DATE
 > Task :Lunaris:mergeDebugAssets
 > Task :lunarisrpc:generateDebugAssets UP-TO-DATE
+> Task :Pixie:dataBindingGenBaseClassesDebug FROM-CACHE
 > Task :lunarisrpc:mergeDebugAssets
 > Task :Pixie:generateDebugAssets UP-TO-DATE
 > Task :Pixie:mergeDebugAssets
@@ -148,11 +148,11 @@ No explicit dependency on the Checker Framework found, using default version 3.4
 > Task :TablerIcons:generateDebugAssets UP-TO-DATE
 > Task :TablerIcons:mergeDebugAssets
 > Task :Pixie:compileDebugJavaWithJavac FROM-CACHE
+> Task :Pixie:bundleLibCompileToJarDebug
+> Task :animatedux:bundleLibRuntimeToJarDebug
 > Task :TablerIcons:packageDebugResources FROM-CACHE
 > Task :TablerIcons:parseDebugLocalResources FROM-CACHE
-> Task :Pixie:bundleLibCompileToJarDebug
 > Task :TablerIcons:generateDebugRFile FROM-CACHE
-> Task :animatedux:bundleLibRuntimeToJarDebug
 > Task :TablerIcons:compileDebugKotlin FROM-CACHE
 > Task :Pixie:bundleLibRuntimeToJarDebug
 > Task :SSC:bundleLibRuntimeToJarDebug
@@ -167,22 +167,22 @@ No explicit dependency on the Checker Framework found, using default version 3.4
 > Task :app:mergeDebugAssets
 > Task :TablerIcons:compileDebugJavaWithJavac FROM-CACHE
 > Task :TablerIcons:bundleLibCompileToJarDebug
-> Task :app:checkDebugAarMetadata
 > Task :TablerIcons:bundleLibRuntimeToJarDebug
+> Task :app:checkDebugAarMetadata
 > Task :app:mapDebugSourceSetPaths
 > Task :app:createDebugCompatibleScreenManifests
 > Task :animatedux:extractDeepLinksDebug FROM-CACHE
-> Task :app:extractDeepLinksDebug FROM-CACHE
 > Task :app:compressDebugAssets FROM-CACHE
+> Task :app:extractDeepLinksDebug FROM-CACHE
 > Task :Lunaris:extractDeepLinksDebug FROM-CACHE
-> Task :Lunaris:processDebugManifest FROM-CACHE
 > Task :lunarisrpc:extractDeepLinksDebug FROM-CACHE
-> Task :Pixie:extractDeepLinksDebug FROM-CACHE
+> Task :Lunaris:processDebugManifest FROM-CACHE
 > Task :lunarisrpc:processDebugManifest FROM-CACHE
+> Task :Pixie:extractDeepLinksDebug FROM-CACHE
 > Task :SSC:extractDeepLinksDebug FROM-CACHE
 > Task :Pixie:processDebugManifest FROM-CACHE
-> Task :TablerIcons:extractDeepLinksDebug FROM-CACHE
 > Task :SSC:processDebugManifest FROM-CACHE
+> Task :TablerIcons:extractDeepLinksDebug FROM-CACHE
 > Task :TablerIcons:processDebugManifest FROM-CACHE
 > Task :Lunaris:compileDebugLibraryResources FROM-CACHE
 > Task :lunarisrpc:compileDebugLibraryResources FROM-CACHE
@@ -201,8 +201,8 @@ No explicit dependency on the Checker Framework found, using default version 3.4
 > Task :app:processDebugManifest
 > Task :app:processDebugManifestForPackage
 > Task :animatedux:bundleLibRuntimeToDirDebug
-> Task :app:checkDebugDuplicateClasses
 > Task :Pixie:bundleLibRuntimeToDirDebug
+> Task :app:checkDebugDuplicateClasses
 > Task :SSC:bundleLibRuntimeToDirDebug
 > Task :TablerIcons:bundleLibRuntimeToDirDebug
 > Task :lunarisrpc:bundleLibRuntimeToDirDebug
@@ -213,17 +213,13 @@ No explicit dependency on the Checker Framework found, using default version 3.4
 Checking the license for package CMake 3.22.1 in /usr/local/lib/android/sdk/licenses
 License for package CMake 3.22.1 accepted.
 Preparing "Install CMake 3.22.1 v.3.22.1".
-"Install CMake 3.22.1 v.3.22.1" ready.
-Installing CMake 3.22.1 in /usr/local/lib/android/sdk/cmake/3.22.1
-"Install CMake 3.22.1 v.3.22.1" complete.
-"Install CMake 3.22.1 v.3.22.1" finished.
-
-> Task :app:configureCMakeDebug[armeabi-v7a]
 
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityDataTypes.java:62: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-> Task :Protocol:bedrock-codec:delombok
+> Task :app:mergeDebugResources
     public static final EntityDataType<BlockDefinition> CARRY_BLOCK_STATE = new EntityDataType<>(BlockDefinition.class, "CARRY_BLOCK_STATE");
+
                                                         ^
+> Task :Protocol:bedrock-codec:delombok
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/response/ItemStackResponseContainer.java:19: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     ContainerSlotType container;
                       ^
@@ -242,16 +238,9 @@ Installing CMake 3.22.1 in /usr/local/lib/android/sdk/cmake/3.22.1
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/action/ItemStackRequestActionType.java:29: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     TAKE_FROM_ITEM_CONTAINER
     ^
-
-> Task :app:mergeDebugResources
-> Task :app:buildCMakeDebug[arm64-v8a]
-> Task :app:configureCMakeDebug[x86]
-> Task :app:buildCMakeDebug[armeabi-v7a]
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-
     public float rowingTime;
                  ^
-> Task :Protocol:bedrock-codec:delombok
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/AnimatePacket.java:48: warning: [dep-ann] deprecated item is not annotated with @Deprecated
         ROW_RIGHT,
         ^
@@ -286,10 +275,24 @@ public class RiderJumpPacket implements BedrockPacket {
     public List<ItemDefinition> itemDefinitions = new ObjectArrayList<>();
                                 ^
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/BiomeDefinitionListPacket.java:21: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+
     public NbtMap definitions;
+> Task :app:configureCMakeDebug[armeabi-v7a]
+
                   ^
+> Task :app:configureCMakeDebug[arm64-v8a]
+"Install CMake 3.22.1 v.3.22.1" ready.
+Installing CMake 3.22.1 in /usr/local/lib/android/sdk/cmake/3.22.1
+"Install CMake 3.22.1 v.3.22.1" complete.
+"Install CMake 3.22.1 v.3.22.1" finished.
+
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :app:buildCMakeDebug[armeabi-v7a]
+> Task :app:configureCMakeDebug[x86]
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/CodeBuilderSourcePacket.java:21: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+
     public String value;
+> Task :Protocol:bedrock-codec:delombok
                   ^
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/packet/CameraAimAssistPresetsPacket.java:22: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     public final List<CameraAimAssistCategories> categories = new ObjectArrayList<>();
@@ -304,9 +307,7 @@ public class RiderJumpPacket implements BedrockPacket {
     FEELING_HAPPY,
     ^
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/camera/CameraAimAssistPresetDefinition.java:14: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-
     private String categories;
-> Task :app:configureCMakeDebug[x86_64]
                    ^
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/camera/CameraAimAssistPresetDefinition.java:18: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     private final List<String> exclusionList = new ObjectArrayList<>();
@@ -314,16 +315,9 @@ public class RiderJumpPacket implements BedrockPacket {
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/AuthoritativeMovementMode.java:15: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     CLIENT,
     ^
-> Task :app:buildCMakeDebug[x86]
-> Task :app:mergeDebugJniLibFolders
-> Task :Lunaris:configureCMakeDebug[arm64-v8a]
-> Task :app:buildCMakeDebug[x86_64]
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/camera/CameraPreset.java:75: warning: [dep-ann] deprecated item is not annotated with @Deprecated
-> Task :Lunaris:buildCMakeDebug[arm64-v8a]
     private OptionalBoolean alignTargetAndCameraForward = OptionalBoolean.empty();
-
                             ^
-> Task :Protocol:bedrock-codec:delombok
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/structure/StructureTemplateResponseType.java:11: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     IMPORT;
     ^
@@ -354,54 +348,52 @@ public class RiderJumpPacket implements BedrockPacket {
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/ClientPlayMode.java:27: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     EXIT_LEVEL_LIVING_ROOM
     ^
+
+> Task :app:configureCMakeDebug[x86_64]
+> Task :app:buildCMakeDebug[x86]
+> Task :app:mergeDebugJniLibFolders
+> Task :app:buildCMakeDebug[x86_64]
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/itemstack/request/ItemStackRequestSlotData.java:17: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+
+> Task :Protocol:bedrock-codec:delombok
     ContainerSlotType container;
                       ^
 
+> Task :Lunaris:configureCMakeDebug[arm64-v8a]
 > Task :Lunaris:configureCMakeDebug[armeabi-v7a]
+> Task :app:processDebugResources
 > Task :Lunaris:configureCMakeDebug[x86]
-> Task :Lunaris:buildCMakeDebug[x86]
 > Task :Lunaris:buildCMakeDebug[armeabi-v7a]
+> Task :Lunaris:buildCMakeDebug[arm64-v8a]
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/ContainerId.java:52: warning: [dep-ann] deprecated item is not annotated with @Deprecated
 > Task :Lunaris:mergeDebugJniLibFolders
+    public static final int CONTAINER_ID_REGISTRY_INVENTORY = 126;
 > Task :lunarisrpc:mergeDebugJniLibFolders
+                            ^
 > Task :lunarisrpc:mergeDebugNativeLibs NO-SOURCE
 > Task :lunarisrpc:copyDebugJniLibsProjectOnly
-> Task :Lunaris:configureCMakeDebug[x86_64]
-> Task :Pixie:configureCMakeDebug[arm64-v8a]
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/inventory/ContainerId.java:52: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityDamageCause.java:40: warning: [dep-ann] deprecated item is not annotated with @Deprecated
 
 > Task :Protocol:bedrock-codec:delombok
-    public static final int CONTAINER_ID_REGISTRY_INVENTORY = 126;
-                            ^
-/home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/entity/EntityDamageCause.java:40: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     MACE_SMASH;
     ^
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-codec/src/main/java/org/cloudburstmc/protocol/bedrock/data/LevelEvent.java:118: warning: [dep-ann] deprecated item is not annotated with @Deprecated
     PARTICLE_CREAKING_HEART_TRIAL,
     ^
 
-> Task :app:processDebugResources
-> Task :Lunaris:buildCMakeDebug[x86_64]
+> Task :Lunaris:configureCMakeDebug[x86_64]
+> Task :Pixie:configureCMakeDebug[arm64-v8a]
+> Task :Lunaris:buildCMakeDebug[x86]
 > Task :Pixie:configureCMakeDebug[armeabi-v7a]
+> Task :Lunaris:buildCMakeDebug[x86_64]
 > Task :Lunaris:mergeDebugNativeLibs
 > Task :Lunaris:copyDebugJniLibsProjectOnly
 > Task :Pixie:configureCMakeDebug[x86]
 > Task :Pixie:buildCMakeDebug[arm64-v8a]
-> Task :Pixie:configureCMakeDebug[x86_64]
-> Task :Pixie:buildCMakeDebug[x86]
 > Task :Pixie:buildCMakeDebug[armeabi-v7a]
 > Task :Pixie:mergeDebugJniLibFolders
-
-> Task :SSC:configureCMakeDebug[armeabi-v7a]
-C/C++: CMake Warning (dev) in CMakeLists.txt:
-C/C++:   No project() command is present.  The top-level CMakeLists.txt file must
-C/C++:   contain a literal, direct call to the project() command.  Add a line of
-C/C++:   code such as
-C/C++:     project(ProjectName)
-C/C++:   near the top of the file, but after cmake_minimum_required().
-C/C++:   CMake is pretending there is a "project(Project)" command on the first
-C/C++:   line.
-C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
+> Task :Pixie:configureCMakeDebug[x86_64]
+> Task :Pixie:buildCMakeDebug[x86]
 
 > Task :SSC:configureCMakeDebug[arm64-v8a]
 C/C++: CMake Warning (dev) in CMakeLists.txt:
@@ -414,12 +406,19 @@ C/C++:   CMake is pretending there is a "project(Project)" command on the first
 C/C++:   line.
 C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
 
+> Task :SSC:configureCMakeDebug[armeabi-v7a]
+C/C++: CMake Warning (dev) in CMakeLists.txt:
+C/C++:   No project() command is present.  The top-level CMakeLists.txt file must
+C/C++:   contain a literal, direct call to the project() command.  Add a line of
+C/C++:   code such as
+C/C++:     project(ProjectName)
+C/C++:   near the top of the file, but after cmake_minimum_required().
+C/C++:   CMake is pretending there is a "project(Project)" command on the first
+C/C++:   line.
+C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
+
 > Task :SSC:buildCMakeDebug[arm64-v8a]
 > Task :SSC:buildCMakeDebug[armeabi-v7a]
-> Task :Pixie:buildCMakeDebug[x86_64]
-> Task :Pixie:mergeDebugNativeLibs
-> Task :Pixie:copyDebugJniLibsProjectOnly
-> Task :SSC:mergeDebugJniLibFolders
 
 > Task :SSC:configureCMakeDebug[x86]
 C/C++: CMake Warning (dev) in CMakeLists.txt:
@@ -432,13 +431,6 @@ C/C++:   CMake is pretending there is a "project(Project)" command on the first
 C/C++:   line.
 C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
 
-> Task :TablerIcons:mergeDebugJniLibFolders
-> Task :TablerIcons:mergeDebugNativeLibs NO-SOURCE
-> Task :TablerIcons:copyDebugJniLibsProjectOnly
-> Task :app:validateSigningDebug
-> Task :app:writeDebugAppMetadata
-> Task :app:writeDebugSigningConfigVersions
-
 > Task :SSC:configureCMakeDebug[x86_64]
 C/C++: CMake Warning (dev) in CMakeLists.txt:
 C/C++:   No project() command is present.  The top-level CMakeLists.txt file must
@@ -450,6 +442,16 @@ C/C++:   CMake is pretending there is a "project(Project)" command on the first
 C/C++:   line.
 C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
 
+> Task :Pixie:buildCMakeDebug[x86_64]
+> Task :Pixie:mergeDebugNativeLibs
+> Task :Pixie:copyDebugJniLibsProjectOnly
+> Task :SSC:mergeDebugJniLibFolders
+> Task :TablerIcons:mergeDebugJniLibFolders
+> Task :TablerIcons:mergeDebugNativeLibs NO-SOURCE
+> Task :TablerIcons:copyDebugJniLibsProjectOnly
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
 > Task :Lunaris:stripDebugDebugSymbols
 > Task :Lunaris:copyDebugJniLibsProjectAndLocalJars
 > Task :Lunaris:extractDeepLinksForAarDebug FROM-CACHE
@@ -467,8 +469,7 @@ C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
 > Task :lunarisrpc:syncDebugLibJars FROM-CACHE
 > Task :lunarisrpc:bundleDebugAar
 > Task :lunarisrpc:assembleDebug
-> Task :Pixie:stripDebugDebugSymbols
-> Task :Pixie:copyDebugJniLibsProjectAndLocalJars
+> Task :SSC:buildCMakeDebug[x86]
 > Task :Pixie:extractDebugAnnotations FROM-CACHE
 > Task :Pixie:extractDeepLinksForAarDebug FROM-CACHE
 > Task :Pixie:mergeDebugGeneratedProguardFiles
@@ -477,14 +478,14 @@ C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
 > Task :Pixie:prepareLintJarForPublish
 > Task :Pixie:mergeDebugJavaResource
 > Task :Pixie:syncDebugLibJars FROM-CACHE
-> Task :Pixie:bundleDebugAar
-> Task :Pixie:assembleDebug
+> Task :Pixie:stripDebugDebugSymbols
 > Task :SSC:extractDebugAnnotations FROM-CACHE
 > Task :SSC:extractDeepLinksForAarDebug FROM-CACHE
 > Task :SSC:mergeDebugGeneratedProguardFiles
 > Task :SSC:mergeDebugConsumerProguardFiles
 > Task :SSC:prepareDebugArtProfile
 > Task :SSC:prepareLintJarForPublish
+> Task :Pixie:copyDebugJniLibsProjectAndLocalJars
 > Task :SSC:mergeDebugJavaResource
 > Task :SSC:syncDebugLibJars FROM-CACHE
 > Task :TablerIcons:stripDebugDebugSymbols NO-SOURCE
@@ -493,18 +494,19 @@ C/C++: This warning is for project developers.  Use -Wno-dev to suppress it.
 > Task :TablerIcons:extractDeepLinksForAarDebug FROM-CACHE
 > Task :TablerIcons:mergeDebugGeneratedProguardFiles
 > Task :TablerIcons:mergeDebugConsumerProguardFiles
-> Task :SSC:buildCMakeDebug[x86_64]
 > Task :TablerIcons:prepareDebugArtProfile
 > Task :TablerIcons:prepareLintJarForPublish
 > Task :TablerIcons:mergeDebugJavaResource
 > Task :TablerIcons:syncDebugLibJars FROM-CACHE
-> Task :SSC:buildCMakeDebug[x86]
+> Task :SSC:buildCMakeDebug[x86_64]
 > Task :SSC:mergeDebugNativeLibs
 > Task :SSC:copyDebugJniLibsProjectOnly
 > Task :SSC:stripDebugDebugSymbols
 > Task :SSC:copyDebugJniLibsProjectAndLocalJars
 > Task :SSC:bundleDebugAar
 > Task :SSC:assembleDebug
+> Task :Pixie:bundleDebugAar
+> Task :Pixie:assembleDebug
 > Task :TablerIcons:bundleDebugAar
 > Task :TablerIcons:assembleDebug
 warning: The following options were not recognized by any processor: '[suppressWarnings]'
@@ -680,14 +682,14 @@ warning: The following options were not recognized by any processor: '[suppressW
 
 /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/util/ChainValidationResult.java:123: warning: [dep-ann] deprecated item is not annotated with @Deprecated
 > Task :Protocol:bedrock-connection:compileJava
-
-> Task :Protocol:bedrock-connection:classes
         public final UUID identity;
-> Task :Protocol:bedrock-connection:jar
+
                           ^
+> Task :Protocol:bedrock-connection:classes
 Note: /home/runner/work/ZephyrMC/ZephyrMC/Protocol/bedrock-connection/build/generated/sources/delombok/java/main/org/cloudburstmc/protocol/bedrock/util/EncryptionUtils.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 2 warnings
+> Task :Protocol:bedrock-connection:jar
 > Task :app:mergeDebugNativeLibs
 > Task :app:stripDebugDebugSymbols
 
@@ -712,26 +714,23 @@ w: file:///home/runner/work/ZephyrMC/ZephyrMC/Lunaris/src/main/java/com/project/
 > Task :Lunaris:bundleDebugAar
 > Task :Lunaris:assembleDebug
 > Task :app:mergeLibDexDebug
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/app/src/main/java/com/project/zephyr/client/router/main/HomePage.kt:168:34 Unresolved reference 'AppSection'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/app/src/main/java/com/project/zephyr/client/router/main/HomePage.kt:72:63 Unresolved reference 'AppSection'.
 
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/app/src/main/java/com/project/zephyr/client/router/main/HomePage.kt:169:38 Unresolved reference 'AppSection'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/app/src/main/java/com/project/zephyr/client/router/main/HomePage.kt:169:34 Unresolved reference 'AppSection'.
 > Task :app:compileDebugKotlin FAILED
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/app/src/main/java/com/project/zephyr/client/router/main/HomePage.kt:170:36 Unresolved reference 'AppSection'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/app/src/main/java/com/project/zephyr/client/router/main/HomePage.kt:171:35 Unresolved reference 'AppSection'.
-e: file:///home/runner/work/ZephyrMC/ZephyrMC/app/src/main/java/com/project/zephyr/client/router/main/HomePage.kt:172:25 Unresolved reference 'AppSection'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/app/src/main/java/com/project/zephyr/client/router/main/HomePage.kt:170:38 Unresolved reference 'AppSection'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/app/src/main/java/com/project/zephyr/client/router/main/HomePage.kt:171:36 Unresolved reference 'AppSection'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/app/src/main/java/com/project/zephyr/client/router/main/HomePage.kt:172:35 Unresolved reference 'AppSection'.
+e: file:///home/runner/work/ZephyrMC/ZephyrMC/app/src/main/java/com/project/zephyr/client/router/main/HomePage.kt:173:25 Unresolved reference 'AppSection'.
 
 
+FAILURE: Build failed with an exception.
 [Incubating] Problems report is available at: file:///home/runner/work/ZephyrMC/ZephyrMC/build/reports/problems/problems-report.html
 
-Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
-FAILURE: Build failed with an exception.
-
 * What went wrong:
-
 Execution failed for task ':app:compileDebugKotlin'.
 > A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
    > Compilation error. See log for more details
-You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
 * Try:
 > Run with --info or --debug option to get more log output.
@@ -935,13 +934,13 @@ Caused by: org.jetbrains.kotlin.gradle.tasks.CompilationErrorException: Compilat
 	... 2 more
 
 
-BUILD FAILED in 2m 22s
+BUILD FAILED in 2m 14s
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
 
 For more on this, please refer to https://docs.gradle.org/8.12.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 244 actionable tasks: 160 executed, 84 from cache
 Configuration cache entry stored.
 Error: Process completed with exit code 1.
-0s
-0s
-0s
-0s
