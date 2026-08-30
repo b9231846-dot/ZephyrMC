@@ -69,6 +69,7 @@ import androidx.core.net.toUri
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.project.zephyr.client.R
 import com.project.zephyr.client.discord.PresenceStateManager
+import com.project.zephyr.client.discord.PresenceStateManager.AppSection
 import com.project.zephyr.client.overlay.mods.NotificationType
 import com.project.zephyr.client.overlay.mods.SimpleOverlayNotification
 import com.project.zephyr.client.service.Services
