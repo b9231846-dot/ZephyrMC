@@ -6,15 +6,17 @@ set(CMAKE_CXX_STANDARD 20)
 
 set(LINKER_FLAGS "-ffixed-x18 -Wl,--hash-style=both")
 set(C_FLAGS "-Werror=format -fdata-sections -ffunction-sections -std=c2x -Wno-error=format-security -w -fno-rtti -fpermissive")
-set(CXX_FLAGS "${CXX_FLAGS} -Wno-error=format-security -ffunction-sections -fdata-sections -w -Werror -s -std=c++20 -Wno-error=c++20-narrowing -fms-extensions -fno-rtti -fpermissive")
+set(CXX_FLAGS "${CXX_FLAGS} -Wno-error=format-security -ffunction-sections -fdata-sections -w -s -std=c++20 -Wno-error=c++20-narrowing -fms-extensions -fno-rtti -fpermissive")
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${C_FLAGS} -O0")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${C_FLAGS} ${CXX_FLAGS} -O0")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${C_FLAGS} -O2")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${C_FLAGS} ${CXX_FLAGS} -O2")
 
 set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} ${LINKER_FLAGS}")
 set(CMAKE_MODULE_LINKER_FLAGS "${CMAKE_MODULE_LINKER_FLAGS} ${LINKER_FLAGS}")
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/includes
+include_directories(
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/includes
         ${CMAKE_CURRENT_SOURCE_DIR}/misc
         ${CMAKE_CURRENT_SOURCE_DIR}/misc/dobby/include
         ${CMAKE_CURRENT_SOURCE_DIR}/misc/imgui
@@ -24,7 +26,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/includes
 )
 
 add_library(pixie SHARED
-        Muffin.cpp
+        ZephyrCore.cpp
         puffs/riruru.cpp
         misc/imgui/imgui.cpp
         misc/imgui/imgui_draw.cpp

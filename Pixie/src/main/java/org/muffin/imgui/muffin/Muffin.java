@@ -1,18 +1,17 @@
 package org.muffin.imgui.muffin;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Build;
-import android.os.Handler;
-import android.provider.Settings;
-import android.widget.Toast;
+import android.util.Log;
 
-public class Muffin extends Activity {
+public class Muffin {
 
     static {
-        System.loadLibrary("pixie");
+        try {
+            System.loadLibrary("pixie");
+            Log.i("ZephyrMC", "libpixie.so loaded successfully");
+        } catch (Throwable t) {
+            Log.e("ZephyrMC", "Failed to load libpixie.so", t);
+        }
     }
 
     public Muffin(Context context) {
@@ -20,15 +19,8 @@ public class Muffin extends Activity {
     }
 
     public static void Start(final Context context) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(context)) {
-            Toast.makeText(context.getApplicationContext(), "Overlay permission is required in order to show mod menu. Restart the game after you allow permission", Toast.LENGTH_LONG).show();
-            context.startActivity(new Intent("android.settings.action.MANAGE_OVERLAY_PERMISSION", Uri.parse("package:" + context.getPackageName())));
-            final Handler handler = new Handler();
-            handler.postDelayed(() -> System.exit(1), 5000);
-        } else {
-            final Handler handler = new Handler();
-            handler.postDelayed(() -> context.startService(new Intent(context, MuffinService.class)), 5000);
-        }
+        // In-process mode: libpixie is loaded, hooks are active in JNI_OnLoad.
+        // No floating service or WindowManager overlay needed!
+        Log.i("ZephyrMC", "Zephyr In-Process Mod Engine started");
     }
-
 }

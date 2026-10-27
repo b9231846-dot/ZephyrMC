@@ -448,21 +448,8 @@ fun HomePageContent() {
                         
                         when (page) {
                             R.string.home -> HomeScreen(onStartToggle = {
-                                if (!Settings.canDrawOverlays(context)) {
-                                    Toast.makeText(context, context.getString(R.string.request_overlay_permission), Toast.LENGTH_SHORT).show()
-                                    overlayPermissionLauncher.launch(
-                                        Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, "package:${context.packageName}".toUri())
-                                    )
-                                    return@HomeScreen
-                                }
-
                                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                                     postNotificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
-                                    return@HomeScreen
-                                }
-
-                                if (Services.isActive) {
-                                    onPostPermissionResult(true)
                                     return@HomeScreen
                                 }
 
